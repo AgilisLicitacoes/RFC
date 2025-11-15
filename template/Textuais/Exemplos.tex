@@ -1,0 +1,126 @@
+\chapter{Exemplos}
+
+\section{Por onde começar}
+
+Procure pelo arquivo de capa na pasta \texttt{PreTextuais} preencha seu nome e o título do seu trabalho.
+
+\section{Como escrever meu texto}
+
+Na pasta \texttt{Textuais} tem um arquivo para cada capítulo, basta abrir o arquivo e escrever!  Todos os tópicos para RFC já estão incluíndos para facilitar!
+
+Em caso de dúvidas, consulte os exemplos.  Abra o Arquivo Exemplos  na pasta \texttt{Textuais}! Não se limite a ler apenas o PDF. No arquivo .TEX você verá o código fonte!
+
+Lembrando que tem vários comentários no código, basta ler com atenção!
+
+\section{Como Inserir Figura?}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Textuais/Figuras/logo.png}
+    \caption{Exemplo de figura.}
+    \fonte{\me{2025}} %% Elaborada pelo autor!
+\end{figure}
+
+\subsection{Ajuste das Figuras}
+
+Como alterar o tamanho das figuras e como referenciar?\subsection{Ajuste das Figuras}
+
+Você pode ajustar o tamanho das figuras e referenciá-las no texto de forma simples.
+
+\paragraph{1. Alterando o tamanho da figura:}  
+Use o parâmetro \verb|scale| ou \verb|width| dentro do \verb|\includegraphics|:
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Textuais/Figuras/logo.png}
+    % ou
+    % \includegraphics[width=0.6\textwidth]{Textuais/Figuras/logo.png} % largura de 60% do texto
+    \caption{Exemplo de figura ajustada}
+    \fonte{\me{2025}}
+    \label{fig:exemplo_logo}
+\end{figure}
+
+\paragraph{2. Referenciando a figura no texto:}  
+
+\section{Como Criar Listas:}
+
+\subsection{Lista não numerada}
+\begin{itemize}
+    \item item a;
+    \item item b;
+    \item item c;
+\end{itemize}
+
+\subsection{Lista numerada}
+\begin{enumerate}
+    \item item a;
+    \item item b;
+    \item item c;
+\end{enumerate}
+
+
+\section{Criar Tabela}
+
+Criar tabela é dificil.  
+Mas você pode passar seus dados para uma IA e pedir para que coloque seus dados no formato da tabela abaixo, só copiar e colar!
+
+\begin{table}[!htbp]
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \caption{Modelo de quadro para planejamento de projeto em Engenharia de Software}%
+    \label{tab:quadro_software}
+    \begin{tabular}{| L{4cm} | C{3cm} | L{4cm}  | C{3cm} |}
+        \hline
+        Fase do Projeto & Prazo Estimado & Fase do Projeto & Responsável \\ 
+        \hline
+        Levantamento de Requisitos & 2 semanas & Análise de Requisitos & João Silva \\ 
+        Projeto de Arquitetura & 1 semana & Design de Interfaces & Maria Oliveira \\ 
+        Implementação & 4 semanas & Desenvolvimento Backend & Carlos Souza \\ 
+        Testes Unitários & 2 semanas & Testes Funcionais & Ana Pereira \\ 
+        Implantação & 1 semana & Deploy & Equipe DevOps \\ 
+        Manutenção & Contínuo & Suporte & Equipe de Suporte \\ 
+        \hline
+    \end{tabular}
+    \vspace{2mm}
+    \fonte{\me{2025}}
+\end{table}
+
+\section{Referências}
+
+Para incluir a referência, procure pelo arquivo BibTeX ou referência em formato BibTeX, ou peça para alguma ferramenta de IA gerar um BibTeX com base na sua referência, site, livro, artigo etc.  
+Aí é só copiar e colar no arquivo de referências.  
+Para colocar no meio do seu texto, use \cite{exemplo_livro} e tudo já fica formatado (veja o código!).
+
+\section{Formatação}
+
+Para colocar texto em negrito faça o seguinte: \textbf{texto} 
+
+Em itálico: \textit{texto} 
+
+Todos os termos devem estar preferencialmente em português. Caso esteja em inglês, deve ser em itálico.
+
+\section{Como usar siglas}
+
+Basta colocar tudo no arquivo de siglas, colocando a sigla e o que ela significa.  
+% Para usar, basta fazer \ac{SIGLA} em qualquer lugar do texto, quantas vezes quiser.
+
+\section{Como fazer funcionar?}
+
+Use o botão de play.  
+O arquivo principal é \texttt{main.tex}, ele é a nossa main; tudo começa por ele e o PDF é gerado.  
+Ele criará arquivos auxiliares (.aux, .bbl, .brf, .log, .lot etc.), não se preocupe com eles.
+
+Você só precisa editar os seguintes arquivos:
+
+\begin{itemize}
+    \item \texttt{capa.tex}
+    \item \texttt{resumo.tex}
+    \item \texttt{Introducao.tex}
+    \item \texttt{Descricao.tex}
+    \item \texttt{Especificacoes.tex}
+    \item \texttt{ProximosPassos.tex}
+\end{itemize}
+
+E, se for necessário, incluir apêndices e anexos.
+
+
