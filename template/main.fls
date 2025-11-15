@@ -543,9 +543,6 @@ INPUT Textuais\Especificacoes.aux
 INPUT .\PosTextuais\Apendices.aux
 INPUT .\PosTextuais\Apendices.aux
 INPUT PosTextuais\Apendices.aux
-INPUT .\PosTextuais\Anexos.aux
-INPUT .\PosTextuais\Anexos.aux
-INPUT PosTextuais\Anexos.aux
 OUTPUT main.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -737,12 +734,10 @@ OUTPUT PosTextuais\Apendices.aux
 INPUT .\PosTextuais\Apendices.tex
 INPUT .\PosTextuais\Apendices.tex
 INPUT PosTextuais\Apendices.tex
-INPUT .\PosTextuais\Anexos.tex
-INPUT .\PosTextuais\Anexos.tex
-OUTPUT PosTextuais\Anexos.aux
-INPUT .\PosTextuais\Anexos.tex
-INPUT .\PosTextuais\Anexos.tex
-INPUT PosTextuais\Anexos.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 OUTPUT main.toc
 INPUT main.aux
 INPUT .\PreTextuais\Capa.aux
@@ -766,11 +761,10 @@ INPUT Textuais\Especificacoes.aux
 INPUT .\PosTextuais\Apendices.aux
 INPUT .\PosTextuais\Apendices.aux
 INPUT PosTextuais\Apendices.aux
-INPUT .\PosTextuais\Anexos.aux
-INPUT .\PosTextuais\Anexos.aux
-INPUT PosTextuais\Anexos.aux
 INPUT .\main.brf
 INPUT .\main.brf
+INPUT C:\Users\marua\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\marua\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
