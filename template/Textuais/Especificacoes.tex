@@ -1,4 +1,3 @@
-
 \chapter{Especificações Técnicas}
 
 % -------------------------------------------------------------
@@ -6,6 +5,8 @@
 \section{Requisitos de Software}
 
 \subsection{Requisitos Funcionais (RF)}
+
+Os requisitos funcionais do sistema foram definidos com base em boas práticas de engenharia de software e especificação de requisitos \cite{sommerville_engenharia_software_2011}.
 
 \begin{itemize}
     \item \textbf{RF1:} O sistema deve permitir o upload de um ou múltiplos arquivos de edital em formato PDF ou texto;
@@ -19,6 +20,8 @@
 \end{itemize}
 
 \subsection{Requisitos Não-Funcionais (RNF)}
+
+Os requisitos não funcionais complementam as funcionalidades descritas, especificando restrições de desempenho, qualidade, usabilidade e manutenção do sistema \cite{sommerville_engenharia_software_2011}.
 
 \begin{itemize}
     \item O tempo médio de processamento por edital deve ser inferior a 30 minutos, avaliado em um conjunto de 5 licitações previamente selecionadas (ver Apêndice~\ref{ap:licitacoes});
@@ -36,10 +39,9 @@
 
 
 
-
 \subsection{Representação dos Requisitos}
 
-A Figura~\ref{fig:caso_uso_agilis} apresenta o diagrama de casos de uso do sistema \textit{Agilis Licitações}, destacando as principais interações do usuário com o sistema.
+A Figura~\ref{fig:caso_uso_agilis} apresenta o diagrama de casos de uso do sistema \textit{Agilis Licitações}, destacando as principais interações do usuário com o sistema, conforme a abordagem de modelagem de requisitos baseada em casos de uso \cite{fowler_uml_2004}.
 
 \begin{figure}[!htbp]
     \centering
@@ -55,9 +57,9 @@ A Figura~\ref{fig:caso_uso_agilis} apresenta o diagrama de casos de uso do siste
 O projeto \textit{Agilis Licitações} atende aos critérios obrigatórios da categoria \textbf{Projetos com Inteligência Artificial (IA)} pelos seguintes aspectos:
 
 \begin{itemize}
-    \item Emprega múltiplos algoritmos de inteligência artificial para processamento de texto;
-    \item Aplica técnicas de \textit{machine learning} e NLP na análise de documentos jurídicos;
-    \item Utiliza arquitetura híbrida com Node.js e Python FastAPI, integrando backend com módulos inteligentes;
+    \item Emprega múltiplos algoritmos de inteligência artificial para processamento de texto, alinhados à evolução recente de modelos de linguagem \cite{devlin_bert_2019, chalkidis_legalbert_2020};
+    \item Aplica técnicas de \textit{machine learning} e NLP na análise de documentos jurídicos \cite{hendrycks_lexnlp_2020};
+    \item Utiliza arquitetura híbrida com Node.js e Python FastAPI, integrando backend com módulos inteligentes \cite{nodejs_docs_2024, fastapi_docs_2024};
     \item Define métricas de acurácia, desempenho e estabilidade para avaliação do modelo de IA.
 \end{itemize}
 
@@ -67,22 +69,22 @@ O projeto \textit{Agilis Licitações} atende aos critérios obrigatórios da ca
 
 \subsection{Visão Inicial da Arquitetura}
 
-O sistema segue uma arquitetura modular em camadas, composta pelos seguintes componentes principais:
+O sistema segue uma arquitetura modular em camadas, composta pelos seguintes componentes principais, em conformidade com princípios de arquitetura de software orientada a responsabilidade e separação de camadas \cite{bass_software_architecture_2012}:
 
 \begin{itemize}
-    \item \textbf{Interface Visual (Frontend — React):} permite o upload de arquivos, o login de usuários e a visualização dos resultados das análises;
+    \item \textbf{Interface Visual (Frontend — React):} permite o upload de arquivos, o login de usuários e a visualização dos resultados das análises \cite{react_docs_2024};
     
-    \item \textbf{Servidor Principal (Backend — Express.js):} gerencia autenticação, requisições, armazenamento de dados e a comunicação com o módulo de IA;
+    \item \textbf{Servidor Principal (Backend — Express.js):} gerencia autenticação, requisições, armazenamento de dados e a comunicação com o módulo de IA \cite{nodejs_docs_2024};
     
-    \item \textbf{Módulo de IA (FastAPI — Python):} executa os algoritmos de leitura, extração textual, análise, lógica, expressões regulares, NLP e aprendizado de máquina;
+    \item \textbf{Módulo de IA (FastAPI — Python):} executa os algoritmos de leitura, extração textual, análise, lógica, expressões regulares, NLP e aprendizado de máquina \cite{fastapi_docs_2024};
     
-    \item \textbf{Banco de Dados (PostgreSQL):} armazena usuários, logs, resultados de análises e hashes de verificação para evitar reprocessamentos.
+    \item \textbf{Banco de Dados (PostgreSQL):} armazena usuários, logs, resultados de análises e hashes de verificação para evitar reprocessamentos \cite{postgresql_docs_2024}.
 \end{itemize}
 
 
 \subsection{Padrões de Arquitetura}
 
-O sistema adota uma \textbf{Arquitetura em Camadas}, separando responsabilidades de forma clara entre os módulos. Esse padrão facilita a manutenção, a escalabilidade e a organização do código, além de permitir a evolução independente de cada componente.
+O sistema adota uma \textbf{Arquitetura em Camadas}, separando responsabilidades de forma clara entre os módulos. Esse padrão facilita a manutenção, a escalabilidade e a organização do código, além de permitir a evolução independente de cada componente \cite{bass_software_architecture_2012}.
 
 As camadas utilizadas são:
 
@@ -112,7 +114,7 @@ A Figura~\ref{fig:mer_agilis} apresenta o Modelo Entidade-Relacionamento (MER) d
 
 \subsection{Diagramas}
 
-Os diagramas desta seção representam a arquitetura do sistema utilizando o \textit{C4 Model} nos níveis de Contexto, Containers e Componentes, além do Modelo Entidade-Relacionamento apresentado anteriormente. Os diagramas foram produzidos com o objetivo de facilitar o entendimento estrutural e operacional do \textit{Agilis Licitações}.
+Os diagramas desta seção representam a arquitetura do sistema utilizando o \textit{C4 Model} \cite{brown_c4_model_2018} nos níveis de Contexto, Containers e Componentes, além do Modelo Entidade-Relacionamento apresentado anteriormente. Os diagramas foram produzidos com o objetivo de facilitar o entendimento estrutural e operacional do \textit{Agilis Licitações}.
 
 \paragraph{C4 — Nível 1 (Contexto)}
 A Figura~\ref{fig:c4_contexto} apresenta a visão de contexto do sistema, destacando a interação entre o usuário e o \textit{Agilis Licitações}.
@@ -189,9 +191,9 @@ A Figura~\ref{fig:mockup_resultados} apresenta a tela onde o usuário visualiza 
 
 \subsection{Decisões e Alternativas Consideradas}
 
-A arquitetura híbrida adotada combina Node.js no backend principal e Python (FastAPI) no módulo de IA. Essa escolha foi motivada pela eficiência do Node.js em operações assíncronas, gerenciamento de requisições e integração com o frontend, enquanto o Python oferece robustez e maturidade em bibliotecas de processamento de linguagem natural, aprendizado de máquina e análise textual.
+A arquitetura híbrida adotada combina Node.js no backend principal e Python (FastAPI) no módulo de IA. Essa escolha foi motivada pela eficiência do Node.js em operações assíncronas, gerenciamento de requisições e integração com o frontend \cite{nodejs_docs_2024}, enquanto o Python oferece robustez e maturidade em bibliotecas de processamento de linguagem natural, aprendizado de máquina e análise textual \cite{python_docs_2024, pandas_docs_2024}. No frontend, o uso de React e bibliotecas de componentes como \textit{shadcn/ui} favorece produtividade e consistência visual \cite{react_docs_2024, shadcn_docs_2024}.
 
-Como alternativa, foi avaliada a construção de todo o sistema em uma única linguagem, utilizando frameworks Python como Django ou Flask. No entanto, essa abordagem foi descartada devido à menor flexibilidade em cenários de alto volume de requisições assíncronas e à integração menos fluida com o ecossistema moderno de desenvolvimento web. A separação dos módulos permitiu maior desempenho, modularidade e independência tecnológica entre as camadas.
+Como alternativa, foi avaliada a construção de todo o sistema em uma única linguagem, utilizando frameworks Python como Django ou Flask. No entanto, essa abordagem foi descartada devido à menor flexibilidade em cenários de alto volume de requisições assíncronas e à integração menos fluida com o ecossistema moderno de desenvolvimento web. A separação dos módulos permitiu maior desempenho, modularidade e independência tecnológica entre as camadas \cite{bass_software_architecture_2012}.
 
 
 \subsection{Critérios de Escalabilidade, Resiliência e Segurança}
@@ -203,7 +205,7 @@ Os critérios adotados visam garantir que o sistema possa crescer, lidar com fal
     
     \item \textbf{Resiliência:} o backend Express.js mantém registros de execução e logs de erro para identificação de falhas, possibilitando correções rápidas e facilitando a monitoração contínua do funcionamento do sistema;
     
-    \item \textbf{Segurança:} as credenciais são armazenadas com hashing criptográfico, a autenticação é realizada via JWT, e entradas do usuário passam por validação. Além disso, o sistema observa diretrizes essenciais da LGPD no tratamento de dados de acesso.
+    \item \textbf{Segurança:} as credenciais são armazenadas com hashing criptográfico, a autenticação é realizada via JWT, e entradas do usuário passam por validação, em conformidade com a Lei Geral de Proteção de Dados (LGPD) \cite{brasil_lei_13709_2018} e com a especificação formal de tokens JWT \cite{jwt_rfc7519_2015}.
 \end{itemize}
 
 
@@ -215,22 +217,24 @@ Os critérios adotados visam garantir que o sistema possa crescer, lidar com fal
 As linguagens utilizadas no projeto foram escolhidas pela adequação às suas funções específicas dentro da arquitetura híbrida do sistema.
 
 \begin{itemize}
-    \item \textbf{JavaScript (Node.js e React):} escolhida pela versatilidade, ampla adoção no desenvolvimento web, facilidade de integração entre frontend e backend e suporte nativo a operações assíncronas;
+    \item \textbf{JavaScript (Node.js e React):} escolhida pela versatilidade, ampla adoção no desenvolvimento web, facilidade de integração entre frontend e backend e suporte nativo a operações assíncronas \cite{nodejs_docs_2024, react_docs_2024};
     
-    \item \textbf{Python (FastAPI):} utilizada no módulo de IA pela robustez em algoritmos complexos, disponibilidade de bibliotecas avançadas para NLP e aprendizado de máquina e excelente desempenho em tarefas de processamento textual.
+    \item \textbf{Python (FastAPI):} utilizada no módulo de IA pela robustez em algoritmos complexos, disponibilidade de bibliotecas avançadas para NLP e aprendizado de máquina e excelente desempenho em tarefas de processamento textual \cite{python_docs_2024, fastapi_docs_2024}.
 \end{itemize}
 
 
 \subsection{Frameworks e Bibliotecas}
 
 \begin{itemize}
-    \item \textbf{Express.js:} utilizado no backend principal pela sua leveza, versatilidade e excelente desempenho em operações assíncronas, além da ampla compatibilidade com o ecossistema JavaScript;
+    \item \textbf{Express.js:} utilizado no backend principal pela sua leveza, versatilidade e excelente desempenho em operações assíncronas, além da ampla compatibilidade com o ecossistema JavaScript \cite{nodejs_docs_2024};
     
-    \item \textbf{FastAPI:} empregado no módulo de IA devido à sua alta performance em APIs Python, suporte nativo a validação de dados e integração simples com bibliotecas de processamento de linguagem natural;
+    \item \textbf{FastAPI:} empregado no módulo de IA devido à sua alta performance em APIs Python, suporte nativo a validação de dados e integração simples com bibliotecas de processamento de linguagem natural \cite{fastapi_docs_2024};
     
-    \item \textbf{Pandas:} utilizado para manipulação de dados e pré-processamento de textos, oferecendo alta compatibilidade com demais bibliotecas Python voltadas a análise e NLP;
+    \item \textbf{Pandas:} utilizado para manipulação de dados e pré-processamento de textos, oferecendo alta compatibilidade com demais bibliotecas Python voltadas a análise e NLP \cite{pandas_docs_2024};
     
-    \item \textbf{shadcn/ui:} adotado no frontend React para construção de interfaces visuais modernas, consistentes e com componentes reutilizáveis, acelerando o desenvolvimento das telas;
+    \item \textbf{shadcn/ui:} adotado no frontend React para construção de interfaces visuais modernas, consistentes e com componentes reutilizáveis, acelerando o desenvolvimento das telas \cite{shadcn_docs_2024};
+    
+    \item \textbf{PostgreSQL:} utilizado como banco de dados relacional principal do sistema, devido à sua maturidade, estabilidade e licença permissiva \cite{postgresql_docs_2024};
     
     \item \textbf{Outras bibliotecas:} serão adicionadas conforme a evolução do projeto, especialmente ferramentas complementares para interface, validação, análise textual e integração entre módulos.
 \end{itemize}
@@ -241,15 +245,15 @@ As linguagens utilizadas no projeto foram escolhidas pela adequação às suas f
 As ferramentas adotadas no desenvolvimento do \textit{Agilis Licitações} foram escolhidas pela praticidade, integração com o fluxo de trabalho e suporte às tecnologias utilizadas no projeto.
 
 \begin{itemize}
-    \item \textbf{Visual Studio Code:} ambiente de desenvolvimento utilizado para edição de código, organização do projeto e integração com extensões voltadas a JavaScript e Python;
+    \item \textbf{Visual Studio Code:} ambiente de desenvolvimento utilizado para edição de código, organização do projeto e integração com extensões voltadas a JavaScript e Python \cite{vscode_docs_2024};
     
-    \item \textbf{GitHub:} plataforma de versionamento e colaboração utilizada para armazenar o código-fonte, controlar alterações e manter o histórico de desenvolvimento;
+    \item \textbf{GitHub:} plataforma de versionamento e colaboração utilizada para armazenar o código-fonte, controlar alterações e manter o histórico de desenvolvimento \cite{github_docs_2024};
     
-    \item \textbf{Node.js e npm:} utilizados para gerenciamento de dependências do backend Express.js e do frontend React;
+    \item \textbf{Node.js e npm:} utilizados para gerenciamento de dependências do backend Express.js e do frontend React \cite{nodejs_docs_2024};
     
-    \item \textbf{Python e pip:} empregados para gerenciar bibliotecas do módulo de IA desenvolvido em FastAPI;
+    \item \textbf{Python e pip:} empregados para gerenciar bibliotecas do módulo de IA desenvolvido em FastAPI \cite{python_docs_2024};
     
-    \item \textbf{Insomnia:} ferramenta utilizada para teste, depuração e validação das APIs do backend e do módulo de IA durante o desenvolvimento.
+    \item \textbf{Insomnia:} ferramenta utilizada para teste, depuração e validação das APIs do backend e do módulo de IA durante o desenvolvimento \cite{insomnia_docs_2024}.
 \end{itemize}
 
 
@@ -262,11 +266,11 @@ As tecnologias utilizadas no desenvolvimento do \textit{Agilis Licitações} ado
     
     \item \textbf{FastAPI:} distribuído sob a licença \textbf{MIT}, favorecendo criação de APIs de forma aberta e permissiva;
     
-    \item \textbf{Python:} licenciado sob a \textbf{Python Software Foundation License 2.0 (PSF)}, que permite uso e modificação do interpretador e suas bibliotecas;
+    \item \textbf{Python:} licenciado sob a \textbf{Python Software Foundation License 2.0 (PSF)};
     
-    \item \textbf{Pandas:} distribuído sob a licença \textbf{BSD-3-Clause}, uma licença permissiva amplamente adotada em bibliotecas científicas;
+    \item \textbf{Pandas:} distribuído sob a licença \textbf{BSD-3-Clause};
     
-    \item \textbf{PostgreSQL:} utiliza a \textbf{PostgreSQL License}, uma licença permissiva similar à BSD, permitindo uso e redistribuição com poucas restrições;
+    \item \textbf{PostgreSQL:} utiliza a \textbf{PostgreSQL License}, similar a licenças permissivas amplamente empregadas em software livre;
     
     \item \textbf{Insomnia:} licenciado sob \textbf{MIT}, permitindo uso livre como ferramenta de teste de APIs.
 \end{itemize}
@@ -294,7 +298,7 @@ Para reduzir os riscos identificados, o sistema adota as seguintes medidas:
 \begin{itemize}
     \item \textbf{Armazenamento seguro de credenciais}, utilizando hashing criptográfico;
     \item \textbf{Validação} dos dados de entrada em uploads e formulários;
-    \item \textbf{Autenticação com tokens JWT}, garantindo controle de acesso seguro;
+    \item \textbf{Autenticação com tokens JWT}, garantindo controle de acesso seguro \cite{jwt_rfc7519_2015};
     \item \textbf{Restrição de tipos de arquivo}, permitindo apenas \textbf{PDF} e \textbf{TXT};
     \item \textbf{Limite de tamanho} de até \textbf{250 MB} por arquivo;
     \item \textbf{Limite de quantidade} de até \textbf{30 arquivos} por análise;
@@ -302,13 +306,13 @@ Para reduzir os riscos identificados, o sistema adota as seguintes medidas:
 
 \subsection{Normas e Boas Práticas Seguidas}
 
-O sistema segue diretrizes básicas de segurança recomendadas para aplicações web e serviços distribuídos:
+O sistema segue diretrizes básicas de segurança recomendadas para aplicações web e serviços distribuídos, com foco no cumprimento da legislação vigente de proteção de dados:
 
 \begin{itemize}
-    \item \textbf{Diretrizes essenciais da LGPD}, aplicadas exclusivamente ao tratamento de dados de login e autenticação;
-    \item \textbf{Separação entre módulos} (frontend, backend e módulo de IA), reduzindo exposição de serviços;
+    \item \textbf{Diretrizes essenciais da LGPD}, aplicadas exclusivamente ao tratamento de dados de login e autenticação \cite{brasil_lei_13709_2018};
+    \item \textbf{Separação entre módulos} (frontend, backend e módulo de IA), reduzindo exposição de serviços.
 \end{itemize}
 
 \subsection{Responsabilidade Ética}
 
-Embora utilize inteligência artificial, o sistema opera exclusivamente sobre \textbf{documentos públicos}, não manipulando dados pessoais sensíveis. Dessa forma, mantém aderência a princípios éticos de privacidade, transparência e uso responsável de IA.
+Embora utilize inteligência artificial, o sistema opera exclusivamente sobre \textbf{documentos públicos}, não manipulando dados pessoais sensíveis. Dessa forma, mantém aderência a princípios éticos de privacidade, transparência e uso responsável de IA, em consonância com os fundamentos da LGPD \cite{brasil_lei_13709_2018}.

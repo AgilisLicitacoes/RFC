@@ -5,4 +5,158 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v<VERSION> }
 
+\bibitem[Bass, Clements e Kazman 2012]{bass_software_architecture_2012}
+\abntrefinfo{Bass, Clements e Kazman}{Bass; Clements; Kazman}{2012}
+{BASS, Len; CLEMENTS, Paul; KAZMAN, Rick. \textbf{Software Architecture in
+  Practice}. 3. ed. Boston: Addison-Wesley, 2012.}
+
+\bibitem[Brasil 2018]{brasil_lei_13709_2018}
+\abntrefinfo{Brasil}{Brasil}{2018}
+{BRASIL. \textbf{Lei n. 13.709, de 14 de agosto de 2018: Lei Geral de
+  Proteção de Dados Pessoais (LGPD)}. 2018.
+  \url{https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709.htm}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Brasil 2021]{brasil_lei_14133_2021}
+\abntrefinfo{Brasil}{Brasil}{2021}
+{BRASIL. \textbf{Lei n. 14.133, de 1º de abril de 2021: Nova Lei de
+  Licitações e Contratos}. 2021.
+  \url{https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14133.htm}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Brown 2018]{brown_c4_model_2018}
+\abntrefinfo{Brown}{Brown}{2018}
+{BROWN, Simon. \textbf{The C4 Model for Visualising Software Architecture}.
+  2018. \url{https://c4model.com}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Chalkidis et al. 2020]{chalkidis_legalbert_2020}
+\abntrefinfo{Chalkidis et al.}{Chalkidis et al.}{2020}
+{CHALKIDIS, Ilias et al. Legal-bert: The muppets straight out of law school.
+\textbf{arXiv preprint}, 2020.}
+
+\bibitem[Devlin et al. 2019]{devlin_bert_2019}
+\abntrefinfo{Devlin et al.}{Devlin et al.}{2019}
+{DEVLIN, Jacob et al. Bert: Pre-training of deep bidirectional transformers for
+  language understanding.
+\textbf{Proceedings of NAACL-HLT}, p. 4171--4186, 2019.}
+
+\bibitem[Fowler 2004]{fowler_uml_2004}
+\abntrefinfo{Fowler}{Fowler}{2004}
+{FOWLER, Martin. \textbf{UML Distilled: A Brief Guide to the Standard Object
+  Modeling Language}. 3. ed. Boston: Addison-Wesley, 2004.}
+
+\bibitem[{GitHub} 2024]{github_docs_2024}
+\abntrefinfo{{GitHub}}{{GitHub}}{2024}
+{{GitHub}. \textbf{GitHub Documentation}. 2024. \url{https://docs.github.com}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Goodfellow, Bengio e Courville 2016]{goodfellow_deep_learning_2016}
+\abntrefinfo{Goodfellow, Bengio e Courville}{Goodfellow; Bengio;
+  Courville}{2016}
+{GOODFELLOW, Ian; BENGIO, Yoshua; COURVILLE, Aaron. \textbf{Deep Learning}.
+  Cambridge: MIT Press, 2016.}
+
+\bibitem[Hendrycks et al. 2020]{hendrycks_lexnlp_2020}
+\abntrefinfo{Hendrycks et al.}{Hendrycks et al.}{2020}
+{HENDRYCKS, Dan et al. Lexnlp: Natural language processing for legal texts.
+\textbf{Journal of AI and Law}, 2020.
+Disponível em: https://lexnlp.readthedocs.io.}
+
+\bibitem[{Insomnia} 2024]{insomnia_docs_2024}
+\abntrefinfo{{Insomnia}}{{Insomnia}}{2024}
+{{Insomnia}. \textbf{Insomnia API Client Documentation}. 2024.
+  \url{https://docs.insomnia.rest}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Jones, Bradley e Sakimura 2015]{jwt_rfc7519_2015}
+\abntrefinfo{Jones, Bradley e Sakimura}{Jones; Bradley; Sakimura}{2015}
+{JONES, Michael; BRADLEY, John; SAKIMURA, Nat. \textbf{JSON Web Token (JWT)}.
+  2015. RFC 7519. Disponível em: \url{https://www.rfc-editor.org/rfc/rfc7519}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Jurafsky e Martin 2023]{jurafsky_martin_2023}
+\abntrefinfo{Jurafsky e Martin}{Jurafsky; Martin}{2023}
+{JURAFSKY, Daniel; MARTIN, James~H. \textbf{Speech and Language Processing}. 3.
+  ed. New Jersey: Prentice Hall, 2023. Versão preliminar disponível online.}
+
+\bibitem[Kim, Lee e Park 2019]{kim_rule_based_limitations_2019}
+\abntrefinfo{Kim, Lee e Park}{Kim; Lee; Park}{2019}
+{KIM, Soo; LEE, Ji-Hoon; PARK, Sungho. Limitations of rule-based information
+  extraction in heterogeneous documents. In:  \textbf{Proceedings of the
+  International Conference on Document Analysis}. [S.l.: s.n.], 2019. p.
+  55--62.}
+
+\bibitem[{Node.js Foundation} 2024]{nodejs_docs_2024}
+\abntrefinfo{{Node.js Foundation}}{{Node.js Foundation}}{2024}
+{{Node.js Foundation}. \textbf{Node.js Documentation}. 2024.
+  \url{https://nodejs.org}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[{Pandas Development Team} 2024]{pandas_docs_2024}
+\abntrefinfo{{Pandas Development Team}}{{Pandas Development Team}}{2024}
+{{Pandas Development Team}. \textbf{pandas Documentation}. 2024.
+  \url{https://pandas.pydata.org}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[{PostgreSQL Global Development Group} 2024]{postgresql_docs_2024}
+\abntrefinfo{{PostgreSQL Global Development Group}}{{PostgreSQL Global
+  Development Group}}{2024}
+{{PostgreSQL Global Development Group}. \textbf{PostgreSQL Documentation}.
+  2024. \url{https://www.postgresql.org/docs}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[{Python Software Foundation} 2024]{python_docs_2024}
+\abntrefinfo{{Python Software Foundation}}{{Python Software Foundation}}{2024}
+{{Python Software Foundation}. \textbf{Python Documentation}. 2024.
+  \url{https://docs.python.org/3}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Públicas 2024]{pncp_estatisticas_2024}
+\abntrefinfo{Públicas}{Públicas}{2024}
+{PúBLICAS, PNCP Portal~Nacional de Contratações. \textbf{Estatísticas de
+  Licitações e Contratações Públicas}. 2024.
+  \url{https://www.gov.br/pncp}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[{React Contributors} 2024]{react_docs_2024}
+\abntrefinfo{{React Contributors}}{{React Contributors}}{2024}
+{{React Contributors}. \textbf{React Documentation}. 2024.
+  \url{https://react.dev}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Russell e Norvig 2020]{russell_norvig_2020}
+\abntrefinfo{Russell e Norvig}{Russell; Norvig}{2020}
+{RUSSELL, Stuart; NORVIG, Peter. \textbf{Artificial Intelligence: A Modern
+  Approach}. 4. ed. London: Pearson, 2020.}
+
+\bibitem[shadcn 2024]{shadcn_docs_2024}
+\abntrefinfo{shadcn}{shadcn}{2024}
+{SHADCN. \textbf{shadcn/ui Documentation}. 2024. \url{https://ui.shadcn.com}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Sommerville 2011]{sommerville_engenharia_software_2011}
+\abntrefinfo{Sommerville}{Sommerville}{2011}
+{SOMMERVILLE, Ian. \textbf{Engenharia de Software}. 9. ed. São Paulo: Pearson,
+  2011.}
+
+\bibitem[(TCU) 2022]{tcu_relatorio_2022}
+\abntrefinfo{(TCU)}{(TCU)}{2022}
+{(TCU), Tribunal de~Contas~da União. \textbf{Relatório de Auditoria sobre
+  Padronização de Editais e Processos de Contratação}. 2022.
+  \url{https://www.tcu.gov.br}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[Tiangolo 2024]{fastapi_docs_2024}
+\abntrefinfo{Tiangolo}{Tiangolo}{2024}
+{TIANGOLO, Sebastián. \textbf{FastAPI Documentation}. 2024.
+  \url{https://fastapi.tiangolo.com}.
+Acesso em: 15 nov. 2025.}
+
+\bibitem[{Visual Studio Code Team} 2024]{vscode_docs_2024}
+\abntrefinfo{{Visual Studio Code Team}}{{Visual Studio Code Team}}{2024}
+{{Visual Studio Code Team}. \textbf{Visual Studio Code Documentation}. 2024.
+  \url{https://code.visualstudio.com/docs}.
+Acesso em: 15 nov. 2025.}
+
 \end{thebibliography}

@@ -641,15 +641,15 @@ INPUT .\Textuais\Introducao.tex
 INPUT .\Textuais\Introducao.tex
 INPUT Textuais\Introducao.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
-INPUT C:\Users\marua\AppData\Roaming\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\marua\AppData\Roaming\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\marua\AppData\Roaming\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\marua\AppData\Roaming\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\marua\AppData\Roaming\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\marua\AppData\Roaming\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT .\Textuais\Descricao.tex
 INPUT .\Textuais\Descricao.tex
@@ -728,6 +728,8 @@ INPUT main.brf
 INPUT .\main.brf
 INPUT .\main.brf
 OUTPUT main.brf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8c.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8c.vf
 INPUT .\PosTextuais\Apendices.tex
 INPUT .\PosTextuais\Apendices.tex
 OUTPUT PosTextuais\Apendices.aux

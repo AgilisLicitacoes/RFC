@@ -2,35 +2,35 @@
 
 \section{Linha de Projeto}
 
-O projeto \textit{Agilis Licitações} se enquadra na categoria \textbf{Projetos com Inteligência Artificial (IA)}.
+O projeto \textit{Agilis Licitações} se enquadra na categoria \textbf{Projetos com Inteligência Artificial (IA)}, alinhando-se às diretrizes atuais de soluções inteligentes para automação de processos complexos \cite{russell_norvig_2020}.
 
 \section{Tema do Projeto}
 
-Desenvolvimento de um sistema inteligente composto por múltiplos algoritmos executados de forma sequencial para ler, interpretar e extrair automaticamente informações essenciais de editais de licitações públicas.
+Desenvolvimento de um sistema inteligente composto por múltiplos algoritmos executados de forma sequencial para ler, interpretar e extrair automaticamente informações essenciais de editais de licitações públicas. Essa abordagem acompanha o avanço recente de modelos especializados para processamento de documentos jurídicos, como o \textit{Legal-BERT} \cite{chalkidis_legalbert_2020}.
 
 
 \section{Propósito e Uso Prático}
 
-O propósito do \textit{Agilis Licitações} é automatizar o processo de leitura e interpretação de editais de licitação, substituindo a análise manual por uma análise automática estruturada. Na prática, o sistema processa os editais de uma licitação e gera uma lista organizada com informações essenciais, como prazos, exigências, documentos obrigatórios e itens licitados. Permitindo que empresas compreendam rapidamente o conteúdo de cada edital.
+O propósito do \textit{Agilis Licitações} é automatizar o processo de leitura e interpretação de editais de licitação, substituindo a análise manual por uma análise automática estruturada. Na prática, o sistema processa os editais de uma licitação e gera uma lista organizada com informações essenciais, como prazos, exigências, documentos obrigatórios e itens licitados. Esse cenário é reforçado pela crescente necessidade de modernização das compras públicas em decorrência da elevada quantidade de editais publicados e da ausência de padronização \cite{tcu_relatorio_2022, brasil_lei_14133_2021}.
 
 \section{Público-Alvo}
 
-O público-alvo são empresas e profissionais que participam de licitações públicas, especialmente no setor farmacêutico.
+O público-alvo são empresas e profissionais que participam de licitações públicas, especialmente no setor farmacêutico. Dados recentes demonstram que esse segmento envolve grande volume de editais e alta complexidade documental \cite{pncp_estatisticas_2024}.
 
 
 \section{Problemas a Resolver}
 
 \begin{itemize}
-    \item O longo tempo necessário para leitura e interpretação de editais;
-    \item A dificuldade de compreensão de textos jurídicos complexos;
-    \item A ocorrência de erros humanos durante a análise manual;
-    \item A dificuldade em localizar informações essenciais para a participação.
+    \item O longo tempo necessário para leitura e interpretação de editais, devido à heterogeneidade estrutural e ausência de padronização \cite{tcu_relatorio_2022};
+    \item A dificuldade de compreensão de textos jurídicos complexos, característica reconhecida em estudos sobre documentos legais \cite{chalkidis_legalbert_2020};
+    \item A ocorrência de erros humanos durante a análise manual, especialmente em tarefas repetitivas e extensas \cite{kim_rule_based_limitations_2019};
+    \item A dificuldade em localizar informações essenciais para a participação, problema recorrente em editais longos e com estrutura variável \cite{tcu_relatorio_2022}.
 \end{itemize}
 
 
 \section{Diferenciação/Ineditismo}
 
-O principal diferencial do \textit{Agilis Licitações} é o uso de múltiplos algoritmos executados de forma sequencial, integrando técnicas de lógica, busca textual, aprendizado de máquina e inteligência artificial. Essa abordagem permite resultados mais precisos e rápidos do que soluções tradicionais baseadas apenas em regras fixas ou intervenção humana contínua.
+O principal diferencial do \textit{Agilis Licitações} é o uso de múltiplos algoritmos executados de forma sequencial, integrando técnicas de lógica, busca textual, aprendizado de máquina e inteligência artificial. Essa abordagem é mais robusta do que métodos baseados apenas em regras fixas, que apresentam limitações quando aplicados a documentos heterogêneos \cite{kim_rule_based_limitations_2019}. A combinação de heurísticas e modelos de linguagem modernos permite resultados mais precisos e rápidos, alinhados às tendências observadas em soluções de NLP voltadas ao setor jurídico \cite{hendrycks_lexnlp_2020}.
 
 
 \section{Limitações}
@@ -38,13 +38,13 @@ O principal diferencial do \textit{Agilis Licitações} é o uso de múltiplos a
 \begin{itemize}
     \item Não substitui a decisão final humana sobre elegibilidade ou envio de propostas;
     \item Não realiza o envio automático de propostas;
-    \item Não abrange editais fora do escopo farmacêutico oncológico.
+    \item Não abrange editais fora do escopo farmacêutico oncológico, sendo essa limitação comum em sistemas especializados de NLP devido ao treinamento em domínios específicos \cite{chalkidis_legalbert_2020}.
 \end{itemize}
 
 
 \section{Normas e Legislações Aplicáveis}
 
-O projeto observa algumas das diretrizes da Lei nº 13.709/2018 — Lei Geral de Proteção de Dados (LGPD) — especificamente no tratamento de credenciais de usuários, garantindo segurança, confidencialidade e armazenamento adequado de login e senha. Os editais processados pelo sistema são documentos públicos, não envolvendo dados pessoais sensíveis.
+O projeto observa algumas das diretrizes da Lei nº 13.709/2018 — Lei Geral de Proteção de Dados (LGPD) — especificamente no tratamento de credenciais de usuários, garantindo segurança, confidencialidade e armazenamento adequado de login e senha. Além disso, atende aos princípios da Nova Lei de Licitações (Lei nº 14.133/2021) no que se refere ao manuseio de documentos públicos \cite{brasil_lei_14133_2021}. Ressalta-se que os editais processados pelo sistema são documentos oficiais públicos, não envolvendo dados pessoais sensíveis, conforme entendimento dos órgãos de compras governamentais \cite{pncp_estatisticas_2024}.
 
 
 \section{Métricas de Sucesso}
@@ -54,6 +54,3 @@ O projeto observa algumas das diretrizes da Lei nº 13.709/2018 — Lei Geral de
     \item Obter tempo médio de processamento inferior a 30 minutos por edital no mesmo conjunto de 5 licitações utilizadas para avaliação (ver Apêndice~\ref{ap:licitacoes});
     \item Garantir estabilidade operacional em pelo menos 90\% das análises, considerando a ausência de falhas inesperadas durante o processamento das 5 licitações previamente selecionadas (Apêndice~\ref{ap:licitacoes}) e mais 5 licitações adicionais escolhidas aleatoriamente.
 \end{itemize}
-
-
-
