@@ -1,88 +1,314 @@
 
 \chapter{Especificações Técnicas}
 
-Descrição detalhada da proposta, contemplando requisitos, arquitetura, tecnologias, segurança e aderência aos critérios obrigatórios da linha de projeto escolhida.
-
 % -------------------------------------------------------------
+
 \section{Requisitos de Software}
 
 \subsection{Requisitos Funcionais (RF)}
-Liste de forma clara as funcionalidades que o sistema deverá oferecer.
+
+\begin{itemize}
+    \item \textbf{RF1:} O sistema deve permitir o upload de um ou múltiplos arquivos de edital em formato PDF ou texto;
+    \item \textbf{RF2:} O sistema deve realizar a leitura automática dos arquivos enviados e identificar suas seções principais;
+    \item \textbf{RF3:} O sistema deve interpretar e extrair informações essenciais, como prazos, documentos exigidos, itens licitados e critérios de participação;
+    \item \textbf{RF4:} O sistema deve armazenar os resultados das análises em um banco de dados;
+    \item \textbf{RF5:} O sistema deve oferecer uma interface visual para exibição dos resultados processados;
+    \item \textbf{RF6:} O sistema deve manter um histórico de análises realizadas por cada usuário;
+    \item \textbf{RF7:} O sistema deve permitir login e autenticação de usuários;
+    \item \textbf{RF8:} O sistema deve evitar o reprocessamento de arquivos idênticos, aplicando hashing de verificação nos uploads.
+\end{itemize}
 
 \subsection{Requisitos Não-Funcionais (RNF)}
-Inclua requisitos de desempenho, segurança, usabilidade, escalabilidade, disponibilidade, entre outros.
+
+\begin{itemize}
+    \item O tempo médio de processamento por edital deve ser inferior a 30 minutos, avaliado em um conjunto de 5 licitações previamente selecionadas;
+    
+    \item A taxa de acerto na extração das informações essenciais deve ser superior a 70\%, também avaliada nas mesmas 5 licitações previamente selecionadas;
+    
+    \item O sistema deve apresentar estabilidade operacional mínima de 90\%, sem falhas inesperadas, avaliada no processamento de 5 licitações previamente selecionadas e 5 licitações adicionais escolhidas aleatoriamente;
+    
+    \item As credenciais de usuário devem ser armazenadas com hashing criptográfico;
+    
+    \item A interface deve ser intuitiva, responsiva e de fácil uso;
+    
+    \item O código deve seguir boas práticas de modularidade e escalabilidade para permitir evolução futura.
+\end{itemize}
+
+
+
 
 \subsection{Representação dos Requisitos}
-Inclua um Diagrama de Casos de Uso (UML) ou outra representação visual que facilite o entendimento.
+
+A Figura~\ref{fig:caso_uso_agilis} apresenta o diagrama de casos de uso do sistema \textit{Agilis Licitações}, destacando as principais interações do usuário com o sistema.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Textuais/Figuras/agilis-usecase.png}
+    \caption{Diagrama de casos de uso do sistema \textit{Agilis Licitações}.}
+    \label{fig:caso_uso_agilis}
+    \fonte{\me{2025}} % Elaborada pelo autor
+\end{figure}
+
 
 \subsection{Aderência aos Requisitos da Linha de Projeto}
-Indique como cada requisito está alinhado aos itens “Obrigatório Atender” definidos para a linha de projeto (Web, Mobile, Jogos, IA ou IoT).
+
+O projeto \textit{Agilis Licitações} atende aos critérios obrigatórios da categoria \textbf{Projetos com Inteligência Artificial (IA)} pelos seguintes aspectos:
+
+\begin{itemize}
+    \item Emprega múltiplos algoritmos de inteligência artificial para processamento de texto;
+    \item Aplica técnicas de \textit{machine learning} e NLP na análise de documentos jurídicos;
+    \item Utiliza arquitetura híbrida com Node.js e Python FastAPI, integrando backend com módulos inteligentes;
+    \item Define métricas de acurácia, desempenho e estabilidade para avaliação do modelo de IA.
+\end{itemize}
+
 
 % -------------------------------------------------------------
 \section{Considerações de Design}
 
 \subsection{Visão Inicial da Arquitetura}
-Apresente os principais componentes e suas interações.
+
+O sistema segue uma arquitetura modular em camadas, composta pelos seguintes componentes principais:
+
+\begin{itemize}
+    \item \textbf{Interface Visual (Frontend — React):} permite o upload de arquivos, o login de usuários e a visualização dos resultados das análises;
+    
+    \item \textbf{Servidor Principal (Backend — Express.js):} gerencia autenticação, requisições, armazenamento de dados e a comunicação com o módulo de IA;
+    
+    \item \textbf{Módulo de IA (FastAPI — Python):} executa os algoritmos de leitura, extração textual, análise, lógica, expressões regulares, NLP e aprendizado de máquina;
+    
+    \item \textbf{Banco de Dados (PostgreSQL):} armazena usuários, logs, resultados de análises e hashes de verificação para evitar reprocessamentos.
+\end{itemize}
+
 
 \subsection{Padrões de Arquitetura}
-Informe padrões adotados (ex.: MVC, Microserviços, MVVM, Arquitetura em Camadas).
+
+O sistema adota uma \textbf{Arquitetura em Camadas}, separando responsabilidades de forma clara entre os módulos. Esse padrão facilita a manutenção, a escalabilidade e a organização do código, além de permitir a evolução independente de cada componente.
+
+As camadas utilizadas são:
+
+\begin{itemize}
+    \item \textbf{Camada de Apresentação (Frontend — React):} responsável pela interação com o usuário, envio de arquivos e exibição dos resultados;
+    
+    \item \textbf{Camada de Aplicação (Backend — Express.js):} coordena o fluxo de requisições, autenticação, regras de negócio e comunicação com o módulo de IA;
+    
+    \item \textbf{Camada de Serviço de IA (FastAPI — Python):} executa os algoritmos de análise textual, NLP, lógica e aprendizado de máquina;
+    
+    \item \textbf{Camada de Dados (PostgreSQL):} armazena usuários, resultados de análises, logs e informações persistentes do sistema.
+\end{itemize}
+
 
 \subsection{Modelo Entidade Relacionamento}
-Inclua o modelo entidade relacionamento (se aplicável).
+
+A Figura~\ref{fig:mer_agilis} apresenta o Modelo Entidade-Relacionamento (MER) do sistema \textit{Agilis Licitações}, descrevendo as entidades principais e suas relações. O modelo inclui as entidades \textbf{Usuário}, \textbf{Edital} e \textbf{Análise}, permitindo registrar quem realizou cada análise, qual edital foi processado e os resultados obtidos.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Textuais/Figuras/modeloentidaderelacionamento.png}
+    \caption{Modelo Entidade-Relacionamento do sistema \textit{Agilis Licitações}.}
+    \label{fig:mer_agilis}
+    \fonte{\me{2025}} % Elaborada pelo autor
+\end{figure}
+
 
 \subsection{Diagramas}
-Utilize os quatro níveis (C4 Model) quando aplicável. Utilize diagramas de classes, sequência, atividades, fluxogrmas e modelo entidade relacionamento de banco de dados. \textbf{Lembre-se: o que faz sentido para seu projeto, para definição e tambem para que ele seja entendido, do ponto de vista de arquitetura e regra de negócio.
-}
+
+Os diagramas desta seção representam a arquitetura do sistema utilizando o \textit{C4 Model} nos níveis de Contexto, Containers e Componentes, além do Modelo Entidade-Relacionamento apresentado anteriormente. Os diagramas foram produzidos com o objetivo de facilitar o entendimento estrutural e operacional do \textit{Agilis Licitações}.
+
+\paragraph{C4 — Nível 1 (Contexto)}
+A Figura~\ref{fig:c4_contexto} apresenta a visão de contexto do sistema, destacando a interação entre o usuário e o \textit{Agilis Licitações}.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Textuais/Figuras/c4model-context.png}
+    \caption{C4 Model — Nível 1 (Contexto) do sistema \textit{Agilis Licitações}.}
+    \label{fig:c4_contexto}
+    \fonte{\me{2025}}
+\end{figure}
+
+\paragraph{C4 — Nível 2 (Containers)}
+A Figura~\ref{fig:c4_containers} apresenta os containers do sistema, incluindo frontend, backend, módulo de IA e banco de dados, com suas responsabilidades e fluxos de comunicação.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Textuais/Figuras/c4model-app.png}
+    \caption{C4 Model — Nível 2 (Containers) do sistema \textit{Agilis Licitações}.}
+    \label{fig:c4_containers}
+    \fonte{\me{2025}}
+\end{figure}
+
+\paragraph{C4 — Nível 3 (Componentes do Backend)}
+A Figura~\ref{fig:c4_componentes} detalha os principais componentes internos do \textit{Backend Express}, incluindo controladores, serviços auxiliares e comunicação com o módulo de IA e o banco de dados.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Textuais/Figuras/c4model-component.png}
+    \caption{C4 Model — Nível 3 (Componentes do Backend Express).}
+    \label{fig:c4_componentes}
+    \fonte{\me{2025}}
+\end{figure}
+
+
+
 \subsection{Mockups das Telas Principais}
-Apresente protótipos visuais das telas mais relevantes, mostrando navegação, disposição de elementos e principais interações do usuário. Esses mockups podem ser feitos em ferramentas como Figma, Adobe XD ou similares, e devem refletir a identidade visual e usabilidade prevista para o produto.
+
+As principais telas do sistema foram prototipadas para representar o fluxo de uso previsto no \textit{Agilis Licitações}. Os mockups a seguir demonstram as interfaces de acesso, análise e visualização dos resultados.
+
+\paragraph{Tela de Login}
+A Figura~\ref{fig:mockup_login} apresenta a tela de login do sistema, onde o usuário informa suas credenciais de acesso para entrar na plataforma e iniciar as análises.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Textuais/Figuras/LoginScreen.png}
+    \caption{Mockup da tela de login do sistema \textit{Agilis Licitações}.}
+    \label{fig:mockup_login}
+    \fonte{\me{2025}}
+\end{figure}
+
+\paragraph{Tela de Análise em Execução}
+A Figura~\ref{fig:mockup_analisando} mostra o estado de processamento do edital, indicando ao usuário que o sistema está executando os algoritmos de análise.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Textuais/Figuras/AnalyzingState.png}
+    \caption{Mockup da tela de análise em execução.}
+    \label{fig:mockup_analisando}
+    \fonte{\me{2025}}
+\end{figure}
+
+\paragraph{Tela de Resultados}
+A Figura~\ref{fig:mockup_resultados} apresenta a tela onde o usuário visualiza o edital enviado e os resultados extraídos automaticamente, incluindo critérios de habilitação, prazos, riscos e recomendações.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Textuais/Figuras/AnaliseEdital.png}
+    \caption{Mockup da tela de visualização dos resultados da análise.}
+    \label{fig:mockup_resultados}
+    \fonte{\me{2025}}
+\end{figure}
+
 
 \subsection{Decisões e Alternativas Consideradas}
-Justifique escolhas de design, documentando alternativas avaliadas.
+
+A arquitetura híbrida adotada combina Node.js no backend principal e Python (FastAPI) no módulo de IA. Essa escolha foi motivada pela eficiência do Node.js em operações assíncronas, gerenciamento de requisições e integração com o frontend, enquanto o Python oferece robustez e maturidade em bibliotecas de processamento de linguagem natural, aprendizado de máquina e análise textual.
+
+Como alternativa, foi avaliada a construção de todo o sistema em uma única linguagem, utilizando frameworks Python como Django ou Flask. No entanto, essa abordagem foi descartada devido à menor flexibilidade em cenários de alto volume de requisições assíncronas e à integração menos fluida com o ecossistema moderno de desenvolvimento web. A separação dos módulos permitiu maior desempenho, modularidade e independência tecnológica entre as camadas.
+
 
 \subsection{Critérios de Escalabilidade, Resiliência e Segurança}
-Descreva como a solução será projetada para suportar crescimento, lidar com falhas e manter segurança.
+
+Os critérios adotados visam garantir que o sistema possa crescer, lidar com falhas e manter a segurança dos dados dos usuários e dos processos de análise.
+
+\begin{itemize}
+    \item \textbf{Escalabilidade:} o sistema é hospedado em um servidor centralizado, permitindo acesso remoto simples e possibilidade de expansão futura por meio de réplicas do backend ou do módulo de IA, caso haja aumento de demanda;
+    
+    \item \textbf{Resiliência:} o backend Express.js mantém registros de execução e logs de erro para identificação de falhas, possibilitando correções rápidas e facilitando a monitoração contínua do funcionamento do sistema;
+    
+    \item \textbf{Segurança:} as credenciais são armazenadas com hashing criptográfico, a autenticação é realizada via JWT, e entradas do usuário passam por validação. Além disso, o sistema observa diretrizes essenciais da LGPD no tratamento de dados de acesso.
+\end{itemize}
+
 
 % -------------------------------------------------------------
 \section{Ferramentas Tecnológica}
 
 \subsection{Linguagens de Programação}
-Liste e justifique as escolhas.
+
+As linguagens utilizadas no projeto foram escolhidas pela adequação às suas funções específicas dentro da arquitetura híbrida do sistema.
+
+\begin{itemize}
+    \item \textbf{JavaScript (Node.js e React):} escolhida pela versatilidade, ampla adoção no desenvolvimento web, facilidade de integração entre frontend e backend e suporte nativo a operações assíncronas;
+    
+    \item \textbf{Python (FastAPI):} utilizada no módulo de IA pela robustez em algoritmos complexos, disponibilidade de bibliotecas avançadas para NLP e aprendizado de máquina e excelente desempenho em tarefas de processamento textual.
+\end{itemize}
+
 
 \subsection{Frameworks e Bibliotecas}
-Detalhe e justifique a seleção.
+
+\begin{itemize}
+    \item \textbf{Express.js:} utilizado no backend principal pela sua leveza, versatilidade e excelente desempenho em operações assíncronas, além da ampla compatibilidade com o ecossistema JavaScript;
+    
+    \item \textbf{FastAPI:} empregado no módulo de IA devido à sua alta performance em APIs Python, suporte nativo a validação de dados e integração simples com bibliotecas de processamento de linguagem natural;
+    
+    \item \textbf{Pandas:} utilizado para manipulação de dados e pré-processamento de textos, oferecendo alta compatibilidade com demais bibliotecas Python voltadas a análise e NLP;
+    
+    \item \textbf{shadcn/ui:} adotado no frontend React para construção de interfaces visuais modernas, consistentes e com componentes reutilizáveis, acelerando o desenvolvimento das telas;
+    
+    \item \textbf{Outras bibliotecas:} serão adicionadas conforme a evolução do projeto, especialmente ferramentas complementares para interface, validação, análise textual e integração entre módulos.
+\end{itemize}
+
 
 \subsection{Ferramentas de Desenvolvimento e Gestão}
-Inclua IDEs, sistemas de versionamento, plataformas de integração contínua, monitoramento, entre outros.
+
+As ferramentas adotadas no desenvolvimento do \textit{Agilis Licitações} foram escolhidas pela praticidade, integração com o fluxo de trabalho e suporte às tecnologias utilizadas no projeto.
+
+\begin{itemize}
+    \item \textbf{Visual Studio Code:} ambiente de desenvolvimento utilizado para edição de código, organização do projeto e integração com extensões voltadas a JavaScript e Python;
+    
+    \item \textbf{GitHub:} plataforma de versionamento e colaboração utilizada para armazenar o código-fonte, controlar alterações e manter o histórico de desenvolvimento;
+    
+    \item \textbf{Node.js e npm:} utilizados para gerenciamento de dependências do backend Express.js e do frontend React;
+    
+    \item \textbf{Python e pip:} empregados para gerenciar bibliotecas do módulo de IA desenvolvido em FastAPI;
+    
+    \item \textbf{Insomnia:} ferramenta utilizada para teste, depuração e validação das APIs do backend e do módulo de IA durante o desenvolvimento.
+\end{itemize}
+
 
 \subsection{Licenciamento}
-Indique as licenças dos softwares e bibliotecas utilizados (MIT, GPL, Apache, Creative Commons).
+
+As tecnologias utilizadas no desenvolvimento do \textit{Agilis Licitações} adotam licenças permissivas, permitindo modificação, distribuição e uso comercial sem grandes restrições.
+
+\begin{itemize}
+    \item \textbf{JavaScript, Node.js, React, Express.js e shadcn/ui:} licenciados sob \textbf{MIT}, permitindo uso livre e ampla flexibilidade no desenvolvimento;
+    
+    \item \textbf{FastAPI:} distribuído sob a licença \textbf{MIT}, favorecendo criação de APIs de forma aberta e permissiva;
+    
+    \item \textbf{Python:} licenciado sob a \textbf{Python Software Foundation License 2.0 (PSF)}, que permite uso e modificação do interpretador e suas bibliotecas;
+    
+    \item \textbf{Pandas:} distribuído sob a licença \textbf{BSD-3-Clause}, uma licença permissiva amplamente adotada em bibliotecas científicas;
+    
+    \item \textbf{PostgreSQL:} utiliza a \textbf{PostgreSQL License}, uma licença permissiva similar à BSD, permitindo uso e redistribuição com poucas restrições;
+    
+    \item \textbf{Insomnia:} licenciado sob \textbf{MIT}, permitindo uso livre como ferramenta de teste de APIs.
+\end{itemize}
+
 
 % -------------------------------------------------------------
 \section{Considerações de Segurança}
 
 \subsection{Riscos Identificados}
-Liste ameaças potenciais (ex.: injeção de código, vazamento de dados, falhas de autenticação).
 
-\subsection{Medidas de Mitigação}
-Explique as ações planejadas para minimizar riscos (ex.: criptografia, controle de acesso, validação de entrada).
+Os principais riscos associados ao funcionamento do sistema incluem:
 
-\subsection{Normas e Boas Práticas Seguidas}
-Cite padrões como OWASP Top 10, ISO/IEC 27001, LGPD ou outros aplicáveis.
-
-\subsection{Responsabilidade Ética}
-Para projetos de IA ou manipulação de dados sensíveis, descreva como serão tratados vieses, privacidade e uso responsável (UNESCO – Ética em IA, OECD AI Principles).
-
-% -------------------------------------------------------------
-\section{Conformidade e Normas Aplicáveis}
-
-Relacione todas as legislações, regulamentações e normas técnicas aplicáveis ao projeto, descrevendo brevemente como serão atendidas.
-
-\subsection{Exemplo: LGPD – Lei Geral de Proteção de Dados}
 \begin{itemize}
-    \item Coletar apenas dados necessários (nome, contato, dados do imóvel).
-    \item Evitar dados sensíveis desnecessários.
-    \item Solicitar consentimento explícito e exibir política de privacidade clara.
-    \item Permitir acesso, correção e exclusão de dados pelo usuário.
+    \item Vazamento de credenciais de usuário;
+    \item Injeção de código por entradas malformadas;
+    \item Envio de arquivos potencialmente maliciosos ou não suportados;
+    \item Falhas de autenticação ou uso indevido de tokens;
+    \item Instabilidade causada por uploads excessivamente grandes ou acima do limite operacional.
 \end{itemize}
 
-% Adicione outros exemplos de normas, regulamentos ou padrões aqui
+\subsection{Medidas de Mitigação}
+
+Para reduzir os riscos identificados, o sistema adota as seguintes medidas:
+
+\begin{itemize}
+    \item \textbf{Armazenamento seguro de credenciais}, utilizando hashing criptográfico;
+    \item \textbf{Validação} dos dados de entrada em uploads e formulários;
+    \item \textbf{Autenticação com tokens JWT}, garantindo controle de acesso seguro;
+    \item \textbf{Restrição de tipos de arquivo}, permitindo apenas \textbf{PDF} e \textbf{TXT};
+    \item \textbf{Limite de tamanho} de até \textbf{250 MB} por arquivo;
+    \item \textbf{Limite de quantidade} de até \textbf{30 arquivos} por análise;
+\end{itemize}
+
+\subsection{Normas e Boas Práticas Seguidas}
+
+O sistema segue diretrizes básicas de segurança recomendadas para aplicações web e serviços distribuídos:
+
+\begin{itemize}
+    \item \textbf{Diretrizes essenciais da LGPD}, aplicadas exclusivamente ao tratamento de dados de login e autenticação;
+    \item \textbf{Separação entre módulos} (frontend, backend e módulo de IA), reduzindo exposição de serviços;
+\end{itemize}
+
+\subsection{Responsabilidade Ética}
+
+Embora utilize inteligência artificial, o sistema opera exclusivamente sobre \textbf{documentos públicos}, não manipulando dados pessoais sensíveis. Dessa forma, mantém aderência a princípios éticos de privacidade, transparência e uso responsável de IA.
