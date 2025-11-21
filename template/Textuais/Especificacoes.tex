@@ -26,7 +26,7 @@ Os requisitos não funcionais complementam as funcionalidades descritas, especif
 \begin{itemize}
     \item O tempo médio de processamento por edital deve ser inferior a 30 minutos, avaliado em um conjunto de 5 licitações previamente selecionadas (ver Apêndice~\ref{ap:licitacoes});
     
-    \item A taxa de acerto na extração das informações essenciais deve ser superior a 70\%, também avaliada nas mesmas 5 licitações previamente selecionadas (ver Apêndice~\ref{ap:licitacoes});
+    \item O desempenho do modelo de extração das informações essenciais deve alcançar pelo menos 70\% de \textit{F1-score} médio, avaliado nas mesmas 5 licitações previamente selecionadas (ver Apêndice~\ref{ap:licitacoes});
     
     \item O sistema deve apresentar estabilidade operacional mínima de 90\%, sem falhas inesperadas, avaliada no processamento de 5 licitações previamente selecionadas (ver Apêndice~\ref{ap:licitacoes}) e 5 licitações adicionais escolhidas aleatoriamente;
     
@@ -62,6 +62,46 @@ O projeto \textit{Agilis Licitações} atende aos critérios obrigatórios da ca
     \item Utiliza arquitetura híbrida com Node.js e Python FastAPI, integrando backend com módulos inteligentes \cite{nodejs_docs_2024, fastapi_docs_2024};
     \item Define métricas de acurácia, desempenho e estabilidade para avaliação do modelo de IA.
 \end{itemize}
+
+
+\subsection{Ambiente de Treinamento e Conjunto de Dados}
+
+O treinamento dos modelos de inteligência artificial do \textit{Agilis Licitações} será realizado majoritariamente em ambiente local, utilizando a estação de trabalho do autor para experimentos iniciais, ajustes de hiperparâmetros e testes de menor porte. Para treinamentos mais pesados, que demandem maior capacidade computacional, será utilizado o \textit{Google Colab Pro}, aproveitando recursos de GPU em nuvem. Em casos específicos que exijam processamento intensivo ou execução em larga escala, está previsto o uso de infraestrutura em nuvem na \textit{Amazon Web Services (AWS)}, de forma pontual, quando necessário.
+
+O conjunto de treino será composto por editais públicos de licitação e por uma base de dados anotada manualmente, contendo as informações essenciais extraídas desses documentos (prazos, documentos exigidos, itens licitados, critérios de participação, entre outros). Essas anotações serão fornecidas pela empresa \textit{Amoveri Farma S.a.}, com base em licitações passadas que a empresa já analisou. O objetivo é alcançar um conjunto com aproximadamente \textbf{1.000 editais} anotados, estabelecendo como mínimo viável uma base de \textbf{300 editais} para os primeiros experimentos.
+
+Todos os editais utilizados são documentos públicos, conforme estabelecido pela Lei nº 14.133/2021, que determina a obrigatoriedade de publicidade e divulgação eletrônica dos editais de licitação em plataformas oficiais como o PNCP \cite{brasil_lei_14133_2021}. As informações anotadas referem-se apenas a requisitos e regras de participação em licitações já encerradas, não contendo dados pessoais sensíveis. Dessa forma, o conjunto de treino não envolve tratamento de informações sigilosas ou protegidas pela LGPD, mantendo o foco apenas em dados jurídicos e administrativos de domínio público.
+
+\section{Pipeline de Algoritmos de IA}
+
+O núcleo inteligente do \textit{Agilis Licitações} é estruturado como uma \textit{pipeline} sequencial de algoritmos, no qual cada etapa refina o resultado da anterior, desde a leitura do edital em PDF até a geração de uma saída estruturada em formato JSON. Esse encadeamento permite combinar regras determinísticas, técnicas clássicas de processamento de texto e modelos de linguagem modernos, explorando o melhor de cada abordagem em termos de precisão, desempenho e robustez.
+
+\begin{enumerate}
+    \item \textbf{Ingestão e normalização do texto}\\
+    Inicialmente, os arquivos de edital enviados pelo usuário (pode ser apenas um ou múltiplos PDFs) são unificados em um único documento lógico, quando necessário. Em seguida, bibliotecas especializadas como \textit{pdfplumber} e \textit{PyMuPDF} são utilizadas para extrair o texto bruto dos PDFs, de acordo com as práticas clássicas de parsing de documentos PDF \cite{hassan2016pdfparsing}, descartando elementos gráficos e mantendo apenas o conteúdo textual relevante. Sobre esse texto é aplicado um conjunto de regras de normalização, incluindo a padronização de quebras de linha, remoção de espaçamentos irregulares e recomposição de linhas que foram quebradas no meio de frases, resultando em um texto contínuo e adequado para processamento posterior.
+
+    \item \textbf{Segmentação inteligente em seções}\\
+    Para contornar limitações de \textit{context window} de modelos de linguagem \cite{beltagy2020longformer} e evitar o processamento de documentos extremamente extensos como um único bloco, o sistema realiza a segmentação do edital em seções coerentes \cite{utiyama2001segmentation}. Essa etapa combina heurísticas baseadas em expressões regulares e padrões típicos de editais (títulos em caixa alta, numeração hierárquica, expressões como ``DO OBJETO'', ``DAS CONDIÇÕES DE PARTICIPAÇÃO'' etc.) com um classificador leve baseado em modelos do tipo \textit{BERT}/\textit{LegalBERT} \cite{devlin_bert_2019, chalkidis_legalbert_2020}. As heurísticas identificam candidatos a início de seção e o classificador supervisionado decide, para cada candidato, se há de fato uma fronteira de seção, reduzindo o risco de cortar informações importantes ou fragmentar cláusulas relacionadas.
+
+    \item \textbf{Localização de trechos candidatos}\\
+    Com o edital segmentado em seções menores, o sistema precisa localizar onde, dentro do texto, estão as informações de interesse (prazos, documentos exigidos, itens licitados, critérios de participação etc.). Essa etapa começa com um módulo de \textbf{dicionário de termos}, que busca palavras-chave e expressões jurídicas ou técnicas pré-cadastradas, marcando seções potencialmente relevantes para cada tipo de informação. Em seguida, um módulo de \textbf{busca semântica com \textit{embeddings}} transforma parágrafos em vetores e compara esses vetores com consultas semânticas pré-definidas (por exemplo, ``prazo para apresentação das propostas'', ``documentos necessários para habilitação''). Um algoritmo de ranqueamento combina os resultados do dicionário e da busca semântica, produzindo um conjunto reduzido de trechos candidatos para cada categoria de informação.
+
+    \item \textbf{Extração fina das informações}\\
+    A etapa seguinte é responsável por extrair, de cada trecho candidato, os valores específicos que serão apresentados ao usuário (datas, listas de documentos, descrições de itens, percentuais, valores, entre outros). Para isso, o sistema utiliza um modelo de extração baseado em transformadores com \textit{fine tuning} supervisionado, seguindo a arquitetura e práticas descritas por \cite{wolf2020transformers}, treinado sobre o conjunto de editais anotados manualmente pela empresa \textit{Amoveri Farma S.a.}. Esse modelo recebe como entrada o trecho candidato e o tipo de informação a ser extraída, retornando os \textit{spans} de texto mais prováveis que contenham a resposta. Em paralelo, um módulo complementar baseado em expressões regulares é empregado para identificar e normalizar padrões específicos, como datas, valores monetários, CNPJ e números de processo, garantindo consistência de formato e maior confiança nos dados estruturados.
+
+    \item \textbf{Consolidação e organização dos resultados}\\
+    Por fim, os resultados extraídos passam por uma etapa de consolidação, na qual são combinados scores de confiança do modelo de extração, sinais da busca semântica e presença de termos do dicionário, a fim de selecionar os melhores valores por campo e resolver possíveis ambiguidades. Em seguida, um módulo leve baseado em modelo de linguagem (\textit{LLM}) é utilizado apenas para organizar as informações em uma estrutura JSON padronizada e, opcionalmente, gerar resumos explicativos para apresentação no frontend. O uso desse LLM é inspirado no papel de modelos de linguagem de grande porte na formatação e organização textual, conforme demonstrado em \cite{brown2020language}. O LLM opera sobre os dados já extraídos, não como fonte primária de decisão, reduzindo o risco de alucinações e garantindo que o sistema permaneça fiel ao conteúdo original dos editais.
+\end{enumerate}
+
+Essa sequência de algoritmos forma um fluxo de processamento completo, onde cada módulo tem uma responsabilidade clara e contribui para refinar a interpretação dos editais.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Textuais/Figuras/Algoritimos-Sequenciais-Agilis-Att.png}
+    \caption{Pipeline de algoritmos do sistema \textit{Agilis Licitações}.}
+    \label{fig:pipeline_agilis}
+    \fonte{\me{2025}}
+\end{figure}
 
 
 % -------------------------------------------------------------
@@ -210,7 +250,7 @@ Os critérios adotados visam garantir que o sistema possa crescer, lidar com fal
 
 
 % -------------------------------------------------------------
-\section{Ferramentas Tecnológica}
+\section{Ferramentas Tecnológicas}
 
 \subsection{Linguagens de Programação}
 

@@ -39,35 +39,43 @@
 \backcite {hendrycks_lexnlp_2020}{{10}{3.1.4}{subsection.3.1.4}}
 \backcite {nodejs_docs_2024, fastapi_docs_2024}{{10}{3.1.4}{subsection.3.1.4}}
 \backcite {nodejs_docs_2024, fastapi_docs_2024}{{10}{3.1.4}{subsection.3.1.4}}
-\backcite {bass_software_architecture_2012}{{11}{3.2.1}{subsection.3.2.1}}
-\backcite {react_docs_2024}{{11}{3.2.1}{subsection.3.2.1}}
-\backcite {nodejs_docs_2024}{{11}{3.2.1}{subsection.3.2.1}}
-\backcite {fastapi_docs_2024}{{11}{3.2.1}{subsection.3.2.1}}
-\backcite {postgresql_docs_2024}{{11}{3.2.1}{subsection.3.2.1}}
-\backcite {bass_software_architecture_2012}{{11}{3.2.2}{subsection.3.2.2}}
-\backcite {brown_c4_model_2018}{{12}{3.2.4}{subsection.3.2.4}}
-\backcite {nodejs_docs_2024}{{17}{3.2.6}{subsection.3.2.6}}
-\backcite {python_docs_2024, pandas_docs_2024}{{17}{3.2.6}{subsection.3.2.6}}
-\backcite {python_docs_2024, pandas_docs_2024}{{17}{3.2.6}{subsection.3.2.6}}
-\backcite {react_docs_2024, shadcn_docs_2024}{{17}{3.2.6}{subsection.3.2.6}}
-\backcite {react_docs_2024, shadcn_docs_2024}{{17}{3.2.6}{subsection.3.2.6}}
-\backcite {bass_software_architecture_2012}{{17}{3.2.6}{subsection.3.2.6}}
-\backcite {brasil_lei_13709_2018}{{17}{3.2.7}{subsection.3.2.7}}
-\backcite {jwt_rfc7519_2015}{{17}{3.2.7}{subsection.3.2.7}}
-\backcite {nodejs_docs_2024, react_docs_2024}{{17}{3.3.1}{subsection.3.3.1}}
-\backcite {nodejs_docs_2024, react_docs_2024}{{17}{3.3.1}{subsection.3.3.1}}
-\backcite {python_docs_2024, fastapi_docs_2024}{{18}{3.3.1}{subsection.3.3.1}}
-\backcite {python_docs_2024, fastapi_docs_2024}{{18}{3.3.1}{subsection.3.3.1}}
-\backcite {nodejs_docs_2024}{{18}{3.3.2}{subsection.3.3.2}}
-\backcite {fastapi_docs_2024}{{18}{3.3.2}{subsection.3.3.2}}
-\backcite {pandas_docs_2024}{{18}{3.3.2}{subsection.3.3.2}}
-\backcite {shadcn_docs_2024}{{18}{3.3.2}{subsection.3.3.2}}
-\backcite {postgresql_docs_2024}{{18}{3.3.2}{subsection.3.3.2}}
-\backcite {vscode_docs_2024}{{18}{3.3.3}{subsection.3.3.3}}
-\backcite {github_docs_2024}{{18}{3.3.3}{subsection.3.3.3}}
-\backcite {nodejs_docs_2024}{{18}{3.3.3}{subsection.3.3.3}}
-\backcite {python_docs_2024}{{19}{3.3.3}{subsection.3.3.3}}
-\backcite {insomnia_docs_2024}{{19}{3.3.3}{subsection.3.3.3}}
-\backcite {jwt_rfc7519_2015}{{20}{3.4.2}{subsection.3.4.2}}
-\backcite {brasil_lei_13709_2018}{{20}{3.4.3}{subsection.3.4.3}}
-\backcite {brasil_lei_13709_2018}{{20}{3.4.4}{subsection.3.4.4}}
+\backcite {brasil_lei_14133_2021}{{11}{3.1.5}{subsection.3.1.5}}
+\backcite {hassan2016pdfparsing}{{12}{1}{Item.1}}
+\backcite {beltagy2020longformer}{{12}{2}{Item.2}}
+\backcite {utiyama2001segmentation}{{12}{2}{Item.2}}
+\backcite {devlin_bert_2019, chalkidis_legalbert_2020}{{12}{2}{Item.2}}
+\backcite {devlin_bert_2019, chalkidis_legalbert_2020}{{12}{2}{Item.2}}
+\backcite {wolf2020transformers}{{12}{4}{Item.4}}
+\backcite {brown2020language}{{13}{5}{Item.5}}
+\backcite {bass_software_architecture_2012}{{13}{3.3.1}{subsection.3.3.1}}
+\backcite {react_docs_2024}{{13}{3.3.1}{subsection.3.3.1}}
+\backcite {nodejs_docs_2024}{{13}{3.3.1}{subsection.3.3.1}}
+\backcite {fastapi_docs_2024}{{13}{3.3.1}{subsection.3.3.1}}
+\backcite {postgresql_docs_2024}{{14}{3.3.1}{subsection.3.3.1}}
+\backcite {bass_software_architecture_2012}{{14}{3.3.2}{subsection.3.3.2}}
+\backcite {brown_c4_model_2018}{{15}{3.3.4}{subsection.3.3.4}}
+\backcite {nodejs_docs_2024}{{19}{3.3.6}{subsection.3.3.6}}
+\backcite {python_docs_2024, pandas_docs_2024}{{19}{3.3.6}{subsection.3.3.6}}
+\backcite {python_docs_2024, pandas_docs_2024}{{19}{3.3.6}{subsection.3.3.6}}
+\backcite {react_docs_2024, shadcn_docs_2024}{{19}{3.3.6}{subsection.3.3.6}}
+\backcite {react_docs_2024, shadcn_docs_2024}{{19}{3.3.6}{subsection.3.3.6}}
+\backcite {bass_software_architecture_2012}{{19}{3.3.6}{subsection.3.3.6}}
+\backcite {brasil_lei_13709_2018}{{20}{3.3.7}{subsection.3.3.7}}
+\backcite {jwt_rfc7519_2015}{{20}{3.3.7}{subsection.3.3.7}}
+\backcite {nodejs_docs_2024, react_docs_2024}{{20}{3.4.1}{subsection.3.4.1}}
+\backcite {nodejs_docs_2024, react_docs_2024}{{20}{3.4.1}{subsection.3.4.1}}
+\backcite {python_docs_2024, fastapi_docs_2024}{{20}{3.4.1}{subsection.3.4.1}}
+\backcite {python_docs_2024, fastapi_docs_2024}{{20}{3.4.1}{subsection.3.4.1}}
+\backcite {nodejs_docs_2024}{{20}{3.4.2}{subsection.3.4.2}}
+\backcite {fastapi_docs_2024}{{20}{3.4.2}{subsection.3.4.2}}
+\backcite {pandas_docs_2024}{{20}{3.4.2}{subsection.3.4.2}}
+\backcite {shadcn_docs_2024}{{20}{3.4.2}{subsection.3.4.2}}
+\backcite {postgresql_docs_2024}{{21}{3.4.2}{subsection.3.4.2}}
+\backcite {vscode_docs_2024}{{21}{3.4.3}{subsection.3.4.3}}
+\backcite {github_docs_2024}{{21}{3.4.3}{subsection.3.4.3}}
+\backcite {nodejs_docs_2024}{{21}{3.4.3}{subsection.3.4.3}}
+\backcite {python_docs_2024}{{21}{3.4.3}{subsection.3.4.3}}
+\backcite {insomnia_docs_2024}{{21}{3.4.3}{subsection.3.4.3}}
+\backcite {jwt_rfc7519_2015}{{22}{3.5.2}{subsection.3.5.2}}
+\backcite {brasil_lei_13709_2018}{{22}{3.5.3}{subsection.3.5.3}}
+\backcite {brasil_lei_13709_2018}{{23}{3.5.4}{subsection.3.5.4}}

@@ -10,6 +10,12 @@
 {BASS, Len; CLEMENTS, Paul; KAZMAN, Rick. \textbf{Software Architecture in
   Practice}. 3. ed. Boston: Addison-Wesley, 2012.}
 
+\bibitem[Beltagy, Peters e Cohan 2020]{beltagy2020longformer}
+\abntrefinfo{Beltagy, Peters e Cohan}{Beltagy; Peters; Cohan}{2020}
+{BELTAGY, Iz; PETERS, Matthew; COHAN, Arman. Longformer: The long-document
+  transformer. In:  \textbf{arXiv preprint arXiv:2004.05150}. [S.l.: s.n.],
+  2020.}
+
 \bibitem[Brasil 2018]{brasil_lei_13709_2018}
 \abntrefinfo{Brasil}{Brasil}{2018}
 {BRASIL. \textbf{Lei n. 13.709, de 14 de agosto de 2018: Lei Geral de
@@ -34,6 +40,11 @@ Acesso em: 15 nov. 2025.}
 {BROWN, Simon. \textbf{The C4 Model for Visualising Software Architecture}.
   2018. \url{https://c4model.com}.
 Acesso em: 15 nov. 2025.}
+
+\bibitem[Brown et al. 2020]{brown2020language}
+\abntrefinfo{Brown et al.}{Brown et al.}{2020}
+{BROWN, Tom~B. et al. Language models are few-shot learners.
+\textbf{NeurIPS}, 2020.}
 
 \bibitem[Chalkidis et al. 2020]{chalkidis_legalbert_2020}
 \abntrefinfo{Chalkidis et al.}{Chalkidis et al.}{2020}
@@ -61,6 +72,12 @@ Acesso em: 15 nov. 2025.}
   Courville}{2016}
 {GOODFELLOW, Ian; BENGIO, Yoshua; COURVILLE, Aaron. \textbf{Deep Learning}.
   Cambridge: MIT Press, 2016.}
+
+\bibitem[Hassan e Baumgartner 2016]{hassan2016pdfparsing}
+\abntrefinfo{Hassan e Baumgartner}{Hassan; Baumgartner}{2016}
+{HASSAN, Samhaa~R.; BAUMGARTNER, Robert. Automatic parsing of pdf documents: A
+  survey. In:  \textbf{Proceedings of the International Conference on Document
+  Analysis and Recognition (ICDAR)}. [S.l.: s.n.], 2016.}
 
 \bibitem[Hendrycks et al. 2020]{hendrycks_lexnlp_2020}
 \abntrefinfo{Hendrycks et al.}{Hendrycks et al.}{2020}
@@ -169,10 +186,21 @@ Acesso em: 15 nov. 2025.}
   \url{https://fastapi.tiangolo.com}.
 Acesso em: 15 nov. 2025.}
 
+\bibitem[Utiyama e Isahara 2001]{utiyama2001segmentation}
+\abntrefinfo{Utiyama e Isahara}{Utiyama; Isahara}{2001}
+{UTIYAMA, Masao; ISAHARA, Hitoshi. A statistical model for domain-independent
+  text segmentation. In:  \textbf{ACL}. [S.l.: s.n.], 2001.}
+
 \bibitem[{Visual Studio Code Team} 2024]{vscode_docs_2024}
 \abntrefinfo{{Visual Studio Code Team}}{{Visual Studio Code Team}}{2024}
 {{Visual Studio Code Team}. \textbf{Visual Studio Code Documentation}. 2024.
   \url{https://code.visualstudio.com/docs}.
 Acesso em: 15 nov. 2025.}
+
+\bibitem[Wolf et al. 2020]{wolf2020transformers}
+\abntrefinfo{Wolf et al.}{Wolf et al.}{2020}
+{WOLF, Thomas et al. Transformers: State-of-the-art natural language
+  processing.
+\textbf{Proceedings of EMNLP}, 2020.}
 
 \end{thebibliography}
