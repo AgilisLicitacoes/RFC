@@ -19,6 +19,8 @@ Reallocating 'name_of_file' (item size: 1) to 16 items.
 Reallocating 'name_of_file' (item size: 1) to 23 items.
 Reallocating 'name_of_file' (item size: 1) to 26 items.
 A level-1 auxiliary file: PosTextuais/Apendices.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: PosTextuais/FolhaAvaliacao.aux
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -41,7 +43,7 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
 You've used 38 entries,
             6714 wiz_defined-function locations,
-            1369 strings with 14231 characters,
+            1370 strings with 14261 characters,
 and the built_in function-call counts, 26965 in all, are:
 = -- 2108
 > -- 969

@@ -538,6 +538,9 @@ INPUT Textuais\Especificacoes.aux
 INPUT .\PosTextuais\Apendices.aux
 INPUT .\PosTextuais\Apendices.aux
 INPUT PosTextuais\Apendices.aux
+INPUT .\PosTextuais\FolhaAvaliacao.aux
+INPUT .\PosTextuais\FolhaAvaliacao.aux
+INPUT PosTextuais\FolhaAvaliacao.aux
 OUTPUT main.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -741,6 +744,12 @@ OUTPUT PosTextuais\Apendices.aux
 INPUT .\PosTextuais\Apendices.tex
 INPUT .\PosTextuais\Apendices.tex
 INPUT PosTextuais\Apendices.tex
+INPUT .\PosTextuais\FolhaAvaliacao.tex
+INPUT .\PosTextuais\FolhaAvaliacao.tex
+OUTPUT PosTextuais\FolhaAvaliacao.aux
+INPUT .\PosTextuais\FolhaAvaliacao.tex
+INPUT .\PosTextuais\FolhaAvaliacao.tex
+INPUT PosTextuais\FolhaAvaliacao.tex
 OUTPUT main.toc
 INPUT main.aux
 INPUT .\PreTextuais\Capa.aux
@@ -764,6 +773,9 @@ INPUT Textuais\Especificacoes.aux
 INPUT .\PosTextuais\Apendices.aux
 INPUT .\PosTextuais\Apendices.aux
 INPUT PosTextuais\Apendices.aux
+INPUT .\PosTextuais\FolhaAvaliacao.aux
+INPUT .\PosTextuais\FolhaAvaliacao.aux
+INPUT PosTextuais\FolhaAvaliacao.aux
 INPUT .\main.brf
 INPUT .\main.brf
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb

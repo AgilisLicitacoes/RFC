@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.21)  21 NOV 2025 01:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.21)  21 NOV 2025 19:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1402,7 +1402,7 @@ Writing index file main.idx
 (main.aux (PreTextuais/Capa.aux)
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 16.
- (PreTextuais/Resumo.aux) (PreTextuais/Sumario.aux) (Textuais/Introducao.aux) (Textuais/Descricao.aux) (Textuais/Especificacoes.aux) (PosTextuais/Apendices.aux))
+ (PreTextuais/Resumo.aux) (PreTextuais/Sumario.aux) (Textuais/Introducao.aux) (Textuais/Descricao.aux) (Textuais/Especificacoes.aux) (PosTextuais/Apendices.aux) (PosTextuais/FolhaAvaliacao.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -1668,12 +1668,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--34
 
 
 ]
+\openout2 = `PosTextuais/FolhaAvaliacao.aux'.
+
+ (PosTextuais/FolhaAvaliacao.tex [28
+
+
+
+] [29]) [30]
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
  
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(main.aux (PreTextuais/Capa.aux) (PreTextuais/Resumo.aux) (PreTextuais/Sumario.aux) (Textuais/Introducao.aux) (Textuais/Descricao.aux) (Textuais/Especificacoes.aux) (PosTextuais/Apendices.aux))
+(main.aux (PreTextuais/Capa.aux) (PreTextuais/Resumo.aux) (PreTextuais/Sumario.aux) (Textuais/Introducao.aux) (Textuais/Descricao.aux) (Textuais/Especificacoes.aux) (PosTextuais/Apendices.aux) (PosTextuais/FolhaAvaliacao.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1682,17 +1689,17 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: 05538B1A69E26E08A5370B83E7E943C8;5476.
  ) 
 Here is how much of TeX's memory you used:
- 70758 strings out of 467869
- 1777009 string characters out of 5428399
- 2658943 words of memory out of 5000000
- 98235 multiletter control sequences out of 15000+600000
+ 70786 strings out of 467869
+ 1778193 string characters out of 5428399
+ 2660189 words of memory out of 5000000
+ 98253 multiletter control sequences out of 15000+600000
  666424 words of font info for 278 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,12n,134p,1101b,1342s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (28 pages, 1305216 bytes).
+Output written on main.pdf (31 pages, 1307798 bytes).
 PDF statistics:
- 813 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
+ 827 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
  38954 words of extra memory for PDF output out of 42996 (max. 10000000)
 
