@@ -203,7 +203,7 @@ Os requisitos não funcionais complementam as funcionalidades descritas, especif
 
 A Figura 1 apresenta o diagrama de casos de uso do sistema Agilis Licitações, destacando as principais interações do usuário com o sistema, conforme a abordagem de modelagem de requisitos baseada em casos de uso (Fowler, 2004).
 
-> \<PLACEHOLDER IMAGEM: Figura 1 - Diagrama de casos de uso do sistema Agilis Licitações\>
+> <img width="850" height="531" alt="agilis-usecase" src="https://github.com/user-attachments/assets/7948a9d5-f852-453d-8b30-b7897f3d31ba" />
 
 **Figura 1 - Diagrama de casos de uso do sistema Agilis Licitações.**
 *Fonte: Elaborado pelo autor (2025).*
@@ -237,7 +237,7 @@ O núcleo inteligente do Agilis Licitações é estruturado como uma pipeline se
 
 Essa sequência de algoritmos forma um fluxo de processamento completo, onde cada módulo tem uma responsabilidade clara e contribui para refinar a interpretação dos editais.
 
-> \<PLACEHOLDER IMAGEM: Figura 2 - Pipeline de algoritmos do sistema Agilis Licitações\>
+> <img width="4960" height="608" alt="Algoritimos-Sequenciais-Agilis-Att" src="https://github.com/user-attachments/assets/b288abad-b75d-439c-9776-dbc96b633817" />
 
 **Figura 2 - Pipeline de algoritmos do sistema Agilis Licitações.**
 *Fonte: Elaborado pelo autor (2025).*
@@ -268,7 +268,7 @@ As camadas utilizadas são:
 
 A Figura 3 apresenta o Modelo Entidade-Relacionamento (MER) do sistema Agilis Licitações, descrevendo as entidades principais e suas relações. O modelo inclui as entidades Usuário, Edital e Análise, permitindo registrar quem realizou cada análise, qual edital foi processado e os resultados obtidos.
 
-> \<PLACEHOLDER IMAGEM: Figura 3 - Modelo Entidade-Relacionamento do sistema Agilis Licitações\>
+> <img width="850" height="314" alt="modeloentidaderelacionamento" src="https://github.com/user-attachments/assets/27da09e3-bf7f-4a98-a51a-83cc16a264af" />
 
 **Figura 3 - Modelo Entidade-Relacionamento do sistema Agilis Licitações.**
 *Fonte: Elaborado pelo autor (2025).*
@@ -280,7 +280,7 @@ Os diagramas desta seção representam a arquitetura do sistema utilizando o C4 
 **3.3.4.0.1 C4 - Nível 1 (Contexto)**
 A Figura 4 apresenta a visão de contexto do sistema, destacando a interação entre o usuário e o Agilis Licitações.
 
-> \<PLACEHOLDER IMAGEM: Figura 4 - C4 Model - Nível 1 (Contexto)\>
+> <img width="512" height="756" alt="c4model-context" src="https://github.com/user-attachments/assets/64c2af47-7418-4bdf-b6c2-2314c9ab23f3" />
 
 **Figura 4 - C4 Model - Nível 1 (Contexto) do sistema Agilis Licitações.**
 *Fonte: Elaborado pelo autor (2025).*
@@ -288,7 +288,7 @@ A Figura 4 apresenta a visão de contexto do sistema, destacando a interação e
 **3.3.4.0.2 C4 - Nível 2 (Containers)**
 A Figura 5 apresenta os containers do sistema, incluindo frontend, backend, módulo de IA e banco de dados, com suas responsabilidades e fluxos de comunicação.
 
-> \<PLACEHOLDER IMAGEM: Figura 5 - C4 Model - Nível 2 (Containers)\>
+> <img width="2464" height="1627" alt="c4model-app" src="https://github.com/user-attachments/assets/d9e90874-0c66-42e7-ac91-a8ab0a955f18" />
 
 **Figura 5 - C4 Model - Nível 2 (Containers) do sistema Agilis Licitações.**
 *Fonte: Elaborado pelo autor (2025).*
@@ -296,7 +296,7 @@ A Figura 5 apresenta os containers do sistema, incluindo frontend, backend, mód
 **3.3.4.0.3 C4 - Nível 3 (Componentes do Backend)**
 A Figura 6 detalha os principais componentes internos do Backend Express, incluindo controladores, serviços auxiliares e comunicação com o módulo de IA e o banco de dados.
 
-> \<PLACEHOLDER IMAGEM: Figura 6 - C4 Model - Nível 3 (Componentes do Backend Express)\>
+> <img width="2384" height="1063" alt="c4model-component" src="https://github.com/user-attachments/assets/8be3f08a-6004-4341-b949-02afafe69014" />
 
 **Figura 6 - C4 Model - Nível 3 (Componentes do Backend Express).**
 *Fonte: Elaborado pelo autor (2025).*
@@ -308,7 +308,7 @@ As principais telas do sistema foram prototipadas para representar o fluxo de us
 **3.3.5.0.1 Tela de Login**
 A Figura 7 apresenta a tela de login do sistema, onde o usuário informa suas credenciais de acesso para entrar na plataforma e iniciar as análises.
 
-> \<PLACEHOLDER IMAGEM: Figura 7 - Mockup da tela de login\>
+> <img width="3600" height="1932" alt="LoginScreen" src="https://github.com/user-attachments/assets/63ec3206-b098-4cc9-9c4f-c91a1e7eb787" />
 
 **Figura 7 - Mockup da tela de login do sistema Agilis Licitações.**
 *Fonte: Elaborado pelo autor (2025).*
@@ -316,7 +316,7 @@ A Figura 7 apresenta a tela de login do sistema, onde o usuário informa suas cr
 **3.3.5.0.2 Tela de Análise em Execução**
 A Figura 8 mostra o estado de processamento do edital, indicando ao usuário que o sistema está executando os algoritmos de análise.
 
-> \<PLACEHOLDER IMAGEM: Figura 8 - Mockup da tela de análise em execução\>
+> <img width="3600" height="1932" alt="AnalyzingState" src="https://github.com/user-attachments/assets/a3ab6bd1-b088-43f6-8ef4-a61205bcc43e" />
 
 **Figura 8 - Mockup da tela de análise em execução.**
 *Fonte: Elaborado pelo autor (2025).*
@@ -324,7 +324,7 @@ A Figura 8 mostra o estado de processamento do edital, indicando ao usuário que
 **3.3.5.0.3 Tela de Resultados**
 A Figura 9 apresenta a tela onde o usuário visualiza o edital enviado e os resultados extraídos automaticamente, incluindo critérios de habilitação, prazos, riscos e recomendações.
 
-> \<PLACEHOLDER IMAGEM: Figura 9 - Mockup da tela de visualização dos resultados\>
+> <img width="3600" height="1932" alt="AnaliseEdital" src="https://github.com/user-attachments/assets/7fed3ef7-506d-410e-9856-476f2a6cc867" />
 
 **Figura 9 - Mockup da tela de visualização dos resultados da análise.**
 *Fonte: Elaborado pelo autor (2025).*
