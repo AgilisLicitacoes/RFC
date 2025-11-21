@@ -49,8 +49,11 @@ O projeto observa algumas das diretrizes da Lei nº 13.709/2018 — Lei Geral de
 
 \section{Métricas de Sucesso}
 
+As métricas adotadas seguem práticas consolidadas em Machine Learning e NLP, fundamentadas em princípios gerais de avaliação de desempenho da área \cite{bishop2006pattern}. O \textit{F1-score} é amplamente utilizado para avaliar tarefas de extração de informações \cite{manning1999foundations}, enquanto métricas operacionais, como tempo de processamento e taxa de falhas, são recomendadas na avaliação de pipelines de ML \cite{lakshmanan2020mlpatterns}.
+
+
 \begin{itemize}
-    \item Alcançar taxa de acerto superior a 70\% na extração de informações essenciais, avaliada em um conjunto de 5 licitações previamente selecionadas (ver Apêndice~\ref{ap:licitacoes});
-    \item Obter tempo médio de processamento inferior a 30 minutos por edital no mesmo conjunto de 5 licitações utilizadas para avaliação (ver Apêndice~\ref{ap:licitacoes});
-    \item Garantir estabilidade operacional em pelo menos 90\% das análises, considerando a ausência de falhas inesperadas durante o processamento das 5 licitações previamente selecionadas (Apêndice~\ref{ap:licitacoes}) e mais 5 licitações adicionais escolhidas aleatoriamente.
+    \item Alcançar pelo menos 70\% de \textit{F1-score} médio na extração de informações essenciais dos editais, métrica que combina precisão e abrangência, garantindo que o sistema não deixe de extrair informações importantes nem gere informações incorretas \cite{manning1999foundations};
+    \item Atingir um tempo médio de processamento inferior a 30 minutos por edital, incluindo etapas de pré-processamento, extração e geração do relatório final;
+    \item Manter taxa de falhas operacionais inferior a 10\%, considerando como falha qualquer evento que interrompa o processamento de um edital, incluindo erros inesperados, ou interrupções na pipeline que impeçam a conclusão da análise automática \cite{lakshmanan2020mlpatterns, breck2022reliableml}.
 \end{itemize}

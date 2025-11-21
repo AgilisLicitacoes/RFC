@@ -24,6 +24,11 @@ Acesso em: 15 nov. 2025.}
   \url{https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14133.htm}.
 Acesso em: 15 nov. 2025.}
 
+\bibitem[Breck et al. 2022]{breck2022reliableml}
+\abntrefinfo{Breck et al.}{Breck et al.}{2022}
+{BRECK, Eric et al. \textbf{Reliable Machine Learning: Applying SRE Principles
+  to ML Systems}. Sebastopol: O'Reilly Media, 2022.}
+
 \bibitem[Brown 2018]{brown_c4_model_2018}
 \abntrefinfo{Brown}{Brown}{2018}
 {BROWN, Simon. \textbf{The C4 Model for Visualising Software Architecture}.
@@ -86,6 +91,17 @@ Acesso em: 15 nov. 2025.}
   extraction in heterogeneous documents. In:  \textbf{Proceedings of the
   International Conference on Document Analysis}. [S.l.: s.n.], 2019. p.
   55--62.}
+
+\bibitem[Lakshmanan, Robinson e Munn 2020]{lakshmanan2020mlpatterns}
+\abntrefinfo{Lakshmanan, Robinson e Munn}{Lakshmanan; Robinson; Munn}{2020}
+{LAKSHMANAN, Valliappa; ROBINSON, Sara; MUNN, Michael. \textbf{Machine Learning
+  Design Patterns: Solutions to Common Challenges in Data Preparation, Model
+  Building, and MLOps}. Sebastopol: O'Reilly Media, 2020.}
+
+\bibitem[Manning e Schütze 1999]{manning1999foundations}
+\abntrefinfo{Manning e Schütze}{Manning; Schütze}{1999}
+{MANNING, Christopher~D.; SCHüTZE, Hinrich. \textbf{Foundations of Statistical
+  Natural Language Processing}. Cambridge: MIT Press, 1999.}
 
 \bibitem[{Node.js Foundation} 2024]{nodejs_docs_2024}
 \abntrefinfo{{Node.js Foundation}}{{Node.js Foundation}}{2024}

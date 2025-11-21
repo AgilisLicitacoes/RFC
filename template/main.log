@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.15)  15 NOV 2025 16:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.15)  21 NOV 2025 00:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1550,7 +1550,11 @@ Cap\'{\i }tulo 2.
 
 
 
-] [7]) [8]
+]
+
+LaTeX Warning: Citation `bishop2006pattern' on page 7 undefined on input line 52.
+
+[7]) [8]
 \openout2 = `Textuais/Especificacoes.aux'.
 
  (Textuais/Especificacoes.tex
@@ -1561,44 +1565,44 @@ Cap\'{\i }tulo 3.
 
 
 ]
-<Textuais/Figuras/agilis-usecase.png, id=250, 204.765pt x 127.9179pt>
+<Textuais/Figuras/agilis-usecase.png, id=261, 204.765pt x 127.9179pt>
 File: Textuais/Figuras/agilis-usecase.png Graphic file (type png)
 <use Textuais/Figuras/agilis-usecase.png>
 Package pdftex.def Info: Textuais/Figuras/agilis-usecase.png  used on input line 48.
 (pdftex.def)             Requested size: 364.00139pt x 227.40814pt.
  [10 <./Textuais/Figuras/agilis-usecase.png>] [11]
-<Textuais/Figuras/modeloentidaderelacionamento.png, id=294, 204.765pt x 75.6426pt>
+<Textuais/Figuras/modeloentidaderelacionamento.png, id=305, 204.765pt x 75.6426pt>
 File: Textuais/Figuras/modeloentidaderelacionamento.png Graphic file (type png)
 <use Textuais/Figuras/modeloentidaderelacionamento.png>
 Package pdftex.def Info: Textuais/Figuras/modeloentidaderelacionamento.png  used on input line 108.
 (pdftex.def)             Requested size: 432.24861pt x 159.6886pt.
-<Textuais/Figuras/c4model-context.png, id=298, 513.92pt x 758.835pt>
+<Textuais/Figuras/c4model-context.png, id=309, 513.92pt x 758.835pt>
 File: Textuais/Figuras/c4model-context.png Graphic file (type png)
 <use Textuais/Figuras/c4model-context.png>
 Package pdftex.def Info: Textuais/Figuras/c4model-context.png  used on input line 124.
 (pdftex.def)             Requested size: 341.25pt x 503.8779pt.
-<Textuais/Figuras/c4model-app.png, id=300, 2473.24pt x 1633.10126pt>
+<Textuais/Figuras/c4model-app.png, id=311, 2473.24pt x 1633.10126pt>
 File: Textuais/Figuras/c4model-app.png Graphic file (type png)
 <use Textuais/Figuras/c4model-app.png>
 Package pdftex.def Info: Textuais/Figuras/c4model-app.png  used on input line 135.
 (pdftex.def)             Requested size: 432.24861pt x 285.3983pt.
-<Textuais/Figuras/c4model-component.png, id=302, 2392.94pt x 1066.98625pt>
+<Textuais/Figuras/c4model-component.png, id=313, 2392.94pt x 1066.98625pt>
 File: Textuais/Figuras/c4model-component.png Graphic file (type png)
 <use Textuais/Figuras/c4model-component.png>
 Package pdftex.def Info: Textuais/Figuras/c4model-component.png  used on input line 146.
 (pdftex.def)             Requested size: 432.24861pt x 192.73303pt.
  [12 <./Textuais/Figuras/modeloentidaderelacionamento.png>] [13 <./Textuais/Figuras/c4model-context.png>] [14 <./Textuais/Figuras/c4model-app.png> <./Textuais/Figuras/c4model-component.png>]
-<Textuais/Figuras/LoginScreen.png, id=326, 3613.5pt x 1939.245pt>
+<Textuais/Figuras/LoginScreen.png, id=337, 3613.5pt x 1939.245pt>
 File: Textuais/Figuras/LoginScreen.png Graphic file (type png)
 <use Textuais/Figuras/LoginScreen.png>
 Package pdftex.def Info: Textuais/Figuras/LoginScreen.png  used on input line 163.
 (pdftex.def)             Requested size: 432.24861pt x 231.9596pt.
-<Textuais/Figuras/AnalyzingState.png, id=328, 3613.5pt x 1939.245pt>
+<Textuais/Figuras/AnalyzingState.png, id=339, 3613.5pt x 1939.245pt>
 File: Textuais/Figuras/AnalyzingState.png Graphic file (type png)
 <use Textuais/Figuras/AnalyzingState.png>
 Package pdftex.def Info: Textuais/Figuras/AnalyzingState.png  used on input line 174.
 (pdftex.def)             Requested size: 432.24861pt x 231.9596pt.
-<Textuais/Figuras/AnaliseEdital.png, id=330, 3613.5pt x 1939.245pt>
+<Textuais/Figuras/AnaliseEdital.png, id=341, 3613.5pt x 1939.245pt>
 File: Textuais/Figuras/AnaliseEdital.png Graphic file (type png)
 <use Textuais/Figuras/AnaliseEdital.png>
 Package pdftex.def Info: Textuais/Figuras/AnaliseEdital.png  used on input line 185.
@@ -1659,21 +1663,25 @@ AED: lastpage setting LastPage
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: F1C61F47CF88DDBD4A06331D0F95D68C;4625.
+(rerunfilecheck)             Checksum: 979F4E52DE352132168CE4D7D129E839;5016.
  ) 
 Here is how much of TeX's memory you used:
- 70832 strings out of 474484
- 1782588 string characters out of 5753526
- 2640555 words of memory out of 5000000
- 91752 multiletter control sequences out of 15000+600000
- 592742 words of font info for 257 fonts, out of 8000000 for 9000
+ 70875 strings out of 474484
+ 1783607 string characters out of 5753526
+ 2641254 words of memory out of 5000000
+ 91786 multiletter control sequences out of 15000+600000
+ 593094 words of font info for 261 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,12n,134p,1054b,1344s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,12n,134p,1054b,1342s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\marua\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (24 pages, 1149669 bytes).
+Output written on main.pdf (24 pages, 1154993 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
+ 761 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
  35349 words of extra memory for PDF output out of 35830 (max. 10000000)
 

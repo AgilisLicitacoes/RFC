@@ -30,6 +30,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: abntex2-ref_UDESC_2020.bib
+Warning--I didn't find a database entry for "bishop2006pattern"
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -39,44 +40,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 29 entries,
+You've used 32 entries,
             6714 wiz_defined-function locations,
-            1330 strings with 12973 characters,
-and the built_in function-call counts, 19940 in all, are:
-= -- 1606
-> -- 651
+            1343 strings with 13484 characters,
+and the built_in function-call counts, 22544 in all, are:
+= -- 1803
+> -- 775
 < -- 7
-+ -- 285
-- -- 201
-* -- 1313
-:= -- 2746
-add.period$ -- 119
-call.type$ -- 29
-change.case$ -- 230
-chr.to.int$ -- 42
-cite$ -- 26
-duplicate$ -- 947
-empty$ -- 1667
-format.name$ -- 948
-if$ -- 4754
++ -- 332
+- -- 238
+* -- 1509
+:= -- 3093
+add.period$ -- 128
+call.type$ -- 32
+change.case$ -- 260
+chr.to.int$ -- 45
+cite$ -- 29
+duplicate$ -- 1072
+empty$ -- 1857
+format.name$ -- 1126
+if$ -- 5374
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 518
-newline$ -- 132
-num.names$ -- 130
-pop$ -- 675
+missing$ -- 579
+newline$ -- 144
+num.names$ -- 145
+pop$ -- 768
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 117
 quote$ -- 0
-skip$ -- 1188
+skip$ -- 1327
 stack$ -- 1
-substring$ -- 642
-swap$ -- 412
+substring$ -- 693
+swap$ -- 462
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1
 warning$ -- 0
-while$ -- 164
+while$ -- 182
 width$ -- 0
-write$ -- 398
+write$ -- 440
+(There was 1 warning)
